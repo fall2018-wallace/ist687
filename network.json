@@ -42,16 +42,18 @@
             "task_status": "in progress"
         },
         {
-            "desc": "Every column that has flight related data is handled\r\nexample: arrival time, departure times, delays, etc.",
-            "name": "data_on_flights.R"
-        },
-        {
             "assigned_to": "dasheth",
             "desc": "data related to customers.\r\nexample: age , gender, shopping, etc",
             "name": "data_on_customers.R",
             "task_status": "proposed"
+        },
+        {
+            "assigned_to": "parshva11shah",
+            "desc": "Every column that has flight related data is handled\r\nexample: arrival time, departure times, delays, etc.",
+            "name": "data_on_flights.R",
+            "task_status": "proposed"
         }
     ],
-    "updated_at": "2018-10-12 03:08:56",
+    "updated_at": "2018-10-12 03:09:02",
     "url": "https://github.com/fall2018-wallace/ist687"
 }
