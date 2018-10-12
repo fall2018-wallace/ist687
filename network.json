@@ -33,14 +33,15 @@
             "name": "satisfactionSurvey.csv"
         },
         {
-            "assigned_to": "sshete",
-            "name": "clean.R",
-            "task_status": "in progress"
+            "name": "data.csv"
         },
         {
-            "name": "data.csv"
+            "assigned_to": "sshete",
+            "desc": "",
+            "name": "clean.R",
+            "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-10-11 17:47:15",
+    "updated_at": "2018-10-12 03:05:14",
     "url": "https://github.com/fall2018-wallace/ist687"
 }
