@@ -52,8 +52,12 @@
             "desc": "Every column that has flight related data is handled\r\nexample: arrival time, departure times, delays, etc.",
             "name": "data_on_flights.R",
             "task_status": "proposed"
+        },
+        {
+            "desc": "travel related data\r\nexample : city , state, origin , destination, etc",
+            "name": "travel_data.R"
         }
     ],
-    "updated_at": "2018-10-12 03:09:02",
+    "updated_at": "2018-10-12 03:10:18",
     "url": "https://github.com/fall2018-wallace/ist687"
 }
