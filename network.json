@@ -44,8 +44,12 @@
         {
             "desc": "Every column that has flight related data is handled\r\nexample: arrival time, departure times, delays, etc.",
             "name": "data_on_flights.R"
+        },
+        {
+            "desc": "data related to customers.\r\nexample: age , gender, shopping, etc",
+            "name": "data_on_customers.R"
         }
     ],
-    "updated_at": "2018-10-12 03:07:17",
+    "updated_at": "2018-10-12 03:08:46",
     "url": "https://github.com/fall2018-wallace/ist687"
 }
