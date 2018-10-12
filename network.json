@@ -46,10 +46,12 @@
             "name": "data_on_flights.R"
         },
         {
+            "assigned_to": "dasheth",
             "desc": "data related to customers.\r\nexample: age , gender, shopping, etc",
-            "name": "data_on_customers.R"
+            "name": "data_on_customers.R",
+            "task_status": "proposed"
         }
     ],
-    "updated_at": "2018-10-12 03:08:46",
+    "updated_at": "2018-10-12 03:08:56",
     "url": "https://github.com/fall2018-wallace/ist687"
 }
