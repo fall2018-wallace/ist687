@@ -40,8 +40,12 @@
             "desc": "",
             "name": "clean.R",
             "task_status": "in progress"
+        },
+        {
+            "desc": "Every column that has flight related data is handled\r\nexample: arrival time, departure times, delays, etc.",
+            "name": "data_on_flights.R"
         }
     ],
-    "updated_at": "2018-10-12 03:05:14",
+    "updated_at": "2018-10-12 03:07:17",
     "url": "https://github.com/fall2018-wallace/ist687"
 }
