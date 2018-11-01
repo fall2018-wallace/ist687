@@ -10,22 +10,22 @@
         {
             "ports": [
                 {
-                    "input": "raw_data",
-                    "type": "csv"
-                }
-            ],
-            "source": "satisfactionSurvey.csv",
-            "target": "clean.R"
-        },
-        {
-            "ports": [
-                {
                     "output": "clean_data",
                     "type": "csv"
                 }
             ],
             "source": "clean.R",
             "target": "data.csv"
+        },
+        {
+            "ports": [
+                {
+                    "input": "raw_data",
+                    "type": "csv"
+                }
+            ],
+            "source": "satisfactionSurvey.csv",
+            "target": "clean.R"
         }
     ],
     "nodes": [
@@ -60,6 +60,6 @@
             "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-11-01 01:31:29",
+    "updated_at": "2018-11-01 01:31:50",
     "url": "https://github.com/fall2018-wallace/ist687"
 }
