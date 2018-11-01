@@ -1,4 +1,4 @@
 
 clean_data <- raw_data
 clean_data
-options(max.print=10000000000)
+write.csv(clean_data,file ="cleaneddata.csv")
