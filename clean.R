@@ -1,4 +1,4 @@
 
 clean_data <- raw_data
 clean_data
-options("max.print"=999999999999999)
+options(max.print=10000000000)
