@@ -30,7 +30,7 @@ data0<-data0[,-10]
 data0
 
 
-v<-data0[data0$Eating.and.Drinking.at.Airport]
+v<-data0[,data0$Eating.and.Drinking.at.Airport]
 createFuncition<- function(v)
 {
   low<- quantile(v,0.25)
