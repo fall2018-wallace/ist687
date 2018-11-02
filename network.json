@@ -57,9 +57,9 @@
             "assigned_to": "sshete",
             "desc": "",
             "name": "clean.R",
-            "task_status": "in progress"
+            "task_status": "validating"
         }
     ],
-    "updated_at": "2018-11-02 02:05:09",
+    "updated_at": "2018-11-02 02:07:23",
     "url": "https://github.com/fall2018-wallace/ist687"
 }
