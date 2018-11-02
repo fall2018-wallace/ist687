@@ -2,7 +2,7 @@
 clean_data <- raw_data
 clean_data
 data0<- clean_data
-data0<- data123[,-4]
+data0<- data0[,-4]
 
 data0<-data0[,-13]
 
