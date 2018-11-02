@@ -31,6 +31,7 @@ data0
 
 
 v<-data0[,21]
+
 data0$Eating
 createFuncition<- function(v)
 {
