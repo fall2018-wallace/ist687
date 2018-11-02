@@ -31,6 +31,7 @@ data0
 
 
 v<-data0[,data0$Eating.and.Drinking.at.Airport]
+data0$Eating
 createFuncition<- function(v)
 {
   low<- quantile(v,0.25)
