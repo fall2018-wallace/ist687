@@ -26,6 +26,16 @@
             ],
             "source": "satisfactionSurvey.csv",
             "target": "clean.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "data0",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "clean.R",
+            "target": "travel_data.R"
         }
     ],
     "nodes": [
@@ -48,18 +58,18 @@
             "task_status": "completed"
         },
         {
-            "assigned_to": "parshva11shah",
-            "desc": "Every column that has flight related data is handled\r\nexample: arrival time, departure times, delays, etc.",
-            "name": "data_on_flights.R",
-            "task_status": "validating"
-        },
-        {
             "assigned_to": "dasheth",
             "desc": "data related to customers.\r\nexample: age , gender, shopping, etc",
             "name": "data_on_customers.R",
             "task_status": "completed"
+        },
+        {
+            "assigned_to": "parshva11shah",
+            "desc": "Every column that has flight related data is handled\r\nexample: arrival time, departure times, delays, etc.",
+            "name": "data_on_flights.R",
+            "task_status": "completed"
         }
     ],
-    "updated_at": "2018-11-29 18:01:22",
+    "updated_at": "2018-11-29 18:33:32",
     "url": "https://github.com/fall2018-wallace/ist687"
 }
