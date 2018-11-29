@@ -54,6 +54,7 @@ createFuncition<- function(v)
 
 
 data0<- data0[-c(21:22)]
+data0<- data.frame(null.values= NA)
 
 ###########################
 #---------LM---------------
