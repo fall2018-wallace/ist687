@@ -36,30 +36,30 @@
             "name": "data.csv"
         },
         {
-            "assigned_to": "dasheth",
-            "desc": "data related to customers.\r\nexample: age , gender, shopping, etc",
-            "name": "data_on_customers.R",
-            "task_status": "not started"
-        },
-        {
-            "assigned_to": "parshva11shah",
-            "desc": "Every column that has flight related data is handled\r\nexample: arrival time, departure times, delays, etc.",
-            "name": "data_on_flights.R",
-            "task_status": "not started"
+            "assigned_to": "sshete",
+            "desc": "",
+            "name": "clean.R",
+            "task_status": "completed"
         },
         {
             "assigned_to": "arun468",
             "desc": "travel related data\r\nexample : city , state, origin , destination, etc",
             "name": "travel_data.R",
+            "task_status": "completed"
+        },
+        {
+            "assigned_to": "parshva11shah",
+            "desc": "Every column that has flight related data is handled\r\nexample: arrival time, departure times, delays, etc.",
+            "name": "data_on_flights.R",
             "task_status": "in progress"
         },
         {
-            "assigned_to": "sshete",
-            "desc": "",
-            "name": "clean.R",
+            "assigned_to": "dasheth",
+            "desc": "data related to customers.\r\nexample: age , gender, shopping, etc",
+            "name": "data_on_customers.R",
             "task_status": "validating"
         }
     ],
-    "updated_at": "2018-11-02 02:07:23",
+    "updated_at": "2018-11-29 17:54:36",
     "url": "https://github.com/fall2018-wallace/ist687"
 }
