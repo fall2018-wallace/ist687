@@ -188,3 +188,131 @@ summary(model10)
 #################################
 #--------------ARM---------------
 #################################
+
+o <- replicate(length(hotelSurvey$overallCustSat), "Average")
+o[hotelSurvey$overallCustSat > 7] <- "High"
+o[hotelSurvey$overallCustSat < 7] <- "Low"
+o
+
+#Mapping the attributes for hotelSize
+summary(hotelSurvey1$hotelSize)
+s <- replicate(length(hotelSurvey$hotelSize), "Average")
+s[hotelSurvey$hotelSize >185] <- "High"
+s[hotelSurvey$hotelSize<=119] <- "Low"
+
+#Mapping the attributes for CheckInStatus
+c <- replicate(length(hotelSurvey$checkInSat), "Average")
+c[hotelSurvey$checkInSat > 7] <- "High"
+c[hotelSurvey$checkInSat < 7] <- "Low"
+
+#Mapping the attributes for cleanliness of Hotel 
+hc <- replicate(length(hotelSurvey$hotelClean), "Average")
+hc[hotelSurvey$hotelClean > 7] <- "High"
+hc[hotelSurvey$hotelClean < 7] <- "Low"
+
+#Mapping the attributes for Hotel Friendliness
+hf <- replicate(length(hotelSurvey$hotelFriendly), "Average")
+hf[hotelSurvey$hotelFriendly > 7] <- "High"
+hf[hotelSurvey$hotelFriendly < 7] <- "Low"
+
+#hist(hotelSurvey$guestAge)
+#quantile(hotelSurvey$guestAge)
+
+#Mapping the attributes for ages of Guest
+g <- quantile(hotelSurvey$guestAge, prob=c(0.4,0.6))
+ga <- replicate(length(hotelSurvey$guestAge), "Average")
+ga[ hotelSurvey$guestAge<=g[1]] <- "Low"
+ga[ hotelSurvey$guestAge>g[2]] <- "High"
+
+
+#Mapping the attributes for Length of Stay
+
+ls <- replicate(length(hotelSurvey$lengthOfStay), "Average")
+ls[ hotelSurvey$guestAge<3] <- "Low"
+ls[ hotelSurvey$guestAge>=4] <- "High"
+summary(hotelSurvey1$lengthOfStay)
+
+
+
+#Mapping the attributes for When Booked Trip
+summary(hotelSurvey1$whenBookedTrip)
+wbt <- replicate(length(hotelSurvey$whenBookedTrip), "Average")
+wbt[ hotelSurvey$whenBookedTrip<=18] <- "Low"
+wbt[ hotelSurvey$whenBookedTrip>24] <- "High"
+
+
+
+#3)	Count the people in each category of for the age and friendliness attributes
+#Hint: Use the table() command.
+cage<-table(ga)
+friendliness<-table(hf)
+cage
+friendliness
+
+
+
+#4)	Express the results of problem 3 as percentages by sending the results of the table()
+# command into the prop.table() command
+
+aper<-prop.table(cage)
+aper
+
+fper<-prop.table(friendliness)
+fper
+
+
+#5)	Show a “contingency table” of percentages for the age and the overall satisfaction 
+# variables together. Write a block comment about what you see.
+con<-prop.table(table(ga,o))
+con
+
+
+#Part C: Coerce the data frame into transactions
+#6)	Install and library two packages: arules and arulesViz.
+
+#install.packages("arules")
+#library("arules")
+
+#install.packages("arulesViz")
+#library("arulesViz")
+
+#7)	Coerce the hotelSurvey data frame into a sparse transactions matrix using:
+# hotelSurveyX <- as(hotelSurvey,"transactions")
+  
+
+df=data.frame(o, s,c, hc, hf, ga, ls,wbt)
+hotelSurveyX=as(df, "transactions")
+hotelSurveyX
+
+#8)	Use the inspect( ), itemFrequency( ), and itemFrequencyPlot( ) commands
+# to explore the contents of hotelSurveyX
+
+
+inspect(hotelSurveyX)
+itemFrequency(hotelSurveyX)
+itemFrequencyPlot(hotelSurveyX)
+
+
+#Part D: Use arules to discover patterns
+#Support is the proportion of times that a particular set of items occurs relative 
+#to the whole dataset. Confidence is proportion of times that the consequent occurs
+#when the antecedent is present. See the review on the next page.  
+
+#9)	Run the apriori command to try and predict happy customers (as defined by their overall satisfaction being high – above 7).
+
+ruleset=apriori(hotelSurveyX, parameter=list(support=0.05, confidence=0.5),appearance = list(default="lhs", rhs=("o=High")))
+
+
+#10)	Once you have a reasonable number of rules, use inspect( ) to view the ruleset
+View(inspect(ruleset))
+
+
+#11)If you had to provide two rules to the hotel owner (in terms of what helps drive high overall
+# customer satisfaction, what would those two rules be?  Use a block comment to explain your answer.
+goodrules<-ruleset[quality(ruleset)$lift>2]
+inspect(goodrules)
+
+
+
+
+
