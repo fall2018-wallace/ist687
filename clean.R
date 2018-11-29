@@ -36,9 +36,9 @@ v
 data0$Eating
 createFuncition<- function(v)
 {
-  low<- quantile(v,0.25)
-  average<- quantile(v,0.50)
-  high<- quantile(v,1)
+  low<- quantile(v,c=0.25)
+  average<- quantile(v,c=0.50)
+  high<- quantile(v,c=1)
   vcat<-v
   vcat[1:length(v)]<-"average"
   vcat[v<=low]<-"low"
