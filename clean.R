@@ -2,6 +2,7 @@
 clean_data <- raw_data
 clean_data
 data0<- clean_data
+data0<- data.frame(null.values= NA)
 data0<- data0[,-4]
 
 data0<-data0[,-13]
@@ -54,7 +55,6 @@ createFuncition<- function(v)
 
 
 data0<- data0[-c(21:22)]
-data0<- data.frame(null.values= NA)
 
 ###########################
 #---------LM---------------
