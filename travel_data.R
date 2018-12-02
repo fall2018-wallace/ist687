@@ -3,7 +3,7 @@
 traveldata<-data00
 #traveldata
 sapply(traveldata, mode)
-sapply(Satisfaction, class)
+sapply(traveldata, class)
 
 transform(traveldata,traveldata$Satisfaction = as.numeric(traveldata$Satisfaction))
 traveldata$Satisfaction <- as.numeric(as.character(traveldata$Satisfaction))
@@ -23,5 +23,5 @@ traveldata$Flight.time.in.minutes <- as.numeric(as.character(traveldata$Flight.t
 traveldata$Flight.Distance <- as.numeric(as.character(traveldata$Flight.Distance))
 
 #removing the additional NA
-Satisfaction <- na.omit(Satisfaction)
+traveldata<- na.omit(Satisfaction)
 
