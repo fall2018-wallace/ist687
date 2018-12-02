@@ -69,6 +69,16 @@
             ],
             "source": "clean.R",
             "target": "data.csv"
+        },
+        {
+            "ports": [
+                {
+                    "output": "traveldata",
+                    "type": "csv"
+                }
+            ],
+            "source": "travel_data.R",
+            "target": "traveldata.csv"
         }
     ],
     "nodes": [
@@ -109,6 +119,6 @@
             "name": "traveldata.csv"
         }
     ],
-    "updated_at": "2018-12-02 00:57:27",
+    "updated_at": "2018-12-02 00:57:42",
     "url": "https://github.com/fall2018-wallace/ist687"
 }
