@@ -72,8 +72,8 @@
         {
             "ports": [
                 {
-                    "input": "data0",
-                    "output": "data1",
+                    "input": "data01",
+                    "output": "data0",
                     "type": "r_obj"
                 }
             ],
@@ -122,6 +122,6 @@
             "task_status": "completed"
         }
     ],
-    "updated_at": "2018-12-02 02:14:00",
+    "updated_at": "2018-12-02 02:17:56",
     "url": "https://github.com/fall2018-wallace/ist687"
 }
