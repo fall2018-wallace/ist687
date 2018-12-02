@@ -83,7 +83,7 @@
         {
             "ports": [
                 {
-                    "output": "data01",
+                    "output": "data_on_flights",
                     "type": "csv"
                 }
             ],
@@ -135,6 +135,6 @@
             "name": "data01.csv"
         }
     ],
-    "updated_at": "2018-12-02 02:26:27",
+    "updated_at": "2018-12-02 03:10:05",
     "url": "https://github.com/fall2018-wallace/ist687"
 }
