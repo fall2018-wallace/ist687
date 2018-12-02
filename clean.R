@@ -55,3 +55,4 @@ createFuncition<- function(v)
 
 data0<- data0[-c(21:22)]
 
+hist(data0)
