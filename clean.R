@@ -76,6 +76,6 @@ data0$Flight.time.in.minutes <- as.numeric(as.character(data0$Flight.time.in.min
 
 data0<-na.omit(data0)
 
-sapply(data0,function(x) sum(length(which(is.na(x))))) #to check which columns have NA
+sapply(data0,function(x) sum(length(which(is.na(x))))) #to check which columns have NA still
 
 
