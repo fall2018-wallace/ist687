@@ -1,5 +1,5 @@
 
 #data00
 traveldata<-data00
-traveldata
-hist(traveldata$Satisfaction)
+#traveldata
+lm1<-hist(traveldata$Satisfaction)
