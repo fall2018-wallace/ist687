@@ -58,7 +58,8 @@ data0$Eating
 #data0<- data0[-c(21:22)]
 
 
-
+data0$Flight.time.in.minutes <- as.character(data0$Flight.time.in.minutes)
+data0 <- data0[!is.na(data0$Flight.time.in.minutes),]
 
 data0$Satisfaction <- as.numeric(as.character(data0$Satisfaction))
 data0$Price.Sensitivity <- as.numeric(as.character(data0$Price.Sensitivity))
