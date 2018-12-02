@@ -74,8 +74,8 @@ data0$Departure.Delay.in.Minutes <- as.numeric(as.character(data0$Departure.Dela
 data0$Arrival.Delay.in.Minutes <- as.numeric(as.character(data0$Arrival.Delay.in.Minutes))
 data0$Flight.time.in.minutes <- as.numeric(as.character(data0$Flight.time.in.minutes))
 
-data0<-na.omit(data0)
+#data0<-na.omit(data0)
 
-sapply(data0,function(x) sum(length(which(is.na(x))))) #to check which columns have NA still
+#sapply(data0,function(x) sum(length(which(is.na(x))))) #to check which columns have NA still
 
 
