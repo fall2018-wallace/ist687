@@ -10,16 +10,6 @@
         {
             "ports": [
                 {
-                    "output": "clean_data",
-                    "type": "csv"
-                }
-            ],
-            "source": "clean.R",
-            "target": "data.csv"
-        },
-        {
-            "ports": [
-                {
                     "input": "raw_data",
                     "type": "csv"
                 }
@@ -69,6 +59,36 @@
             ],
             "source": "clean.R",
             "target": "hist0.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "data0",
+                    "type": "csv"
+                }
+            ],
+            "source": "clean.R",
+            "target": "data.csv"
+        },
+        {
+            "ports": [
+                {
+                    "output": "traveldata",
+                    "type": "csv"
+                }
+            ],
+            "source": "travel_data.R",
+            "target": "traveldata.csv"
+        },
+        {
+            "ports": [
+                {
+                    "output": "lm1",
+                    "type": "png"
+                }
+            ],
+            "source": "travel_data.R",
+            "target": "traveldata111.png"
         }
     ],
     "nodes": [
@@ -104,8 +124,14 @@
         },
         {
             "name": "hist0.png"
+        },
+        {
+            "name": "traveldata.csv"
+        },
+        {
+            "name": "traveldata111.png"
         }
     ],
-    "updated_at": "2018-12-02 00:36:56",
+    "updated_at": "2018-12-02 01:16:14",
     "url": "https://github.com/fall2018-wallace/ist687"
 }
