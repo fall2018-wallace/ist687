@@ -5,7 +5,7 @@ traveldata<-data00
 sapply(traveldata, mode)
 sapply(traveldata, class)
 
-transform(traveldata,traveldata$Satisfaction = as.numeric(traveldata$Satisfaction))
+transform(traveldata,traveldata$Satisfaction=as.numeric(traveldata$Satisfaction))
 traveldata$Satisfaction <- as.numeric(as.character(traveldata$Satisfaction))
 traveldata$Price.Sensitivity <- as.numeric(as.character(traveldata$Price.Sensitivity))
 traveldata$Year.of.First.Flight <- as.numeric(as.character(traveldata$Year.of.First.Flight))
