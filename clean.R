@@ -2,7 +2,7 @@
 clean_data <- raw_data
 clean_data
 data0<- clean_data
-hist(data0)
+hist(data0,data0$Eating)
 
 data0<- data0[,-4]
 
