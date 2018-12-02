@@ -34,25 +34,31 @@ data0
 v<-data0[,21]
 v
 
-data0$Eating
-createFuncition<- function(v)
-{
-  low<- quantile(v,0.25)
-  average<- quantile(v,0.50)
-  high<- quantile(v,1)
-  vcat<-v
-  vcat[1:length(v)]<-"average"
-  vcat[v<=low]<-"low"
-  vcat[v>low & v<=average]<-"average"
-  vcat[v>average & v<=high]<- "high"
-  return(vcat)
-  }
-
- quality<-createFuncition(v)
-   
-
-   data0<- data.frame(data0, quality)
 
 
-data0<- data0[-c(21:22)]
+data0<- data0[-c(21:22)] #extra arrival delay greater than 5 mins
+
+
+
+#clean
+data0$Satisfaction <- as.numeric(as.character(data0$Satisfaction))
+data0$Price.Sensitivity <- as.numeric(as.character(data0$Price.Sensitivity))
+data0$Year.of.First.Flight <- as.numeric(as.character(data0$Year.of.First.Flight))
+data0$No.of.Flights.p.a. <- as.numeric(as.character(data0$No.of.Flights.p.a.))
+data0$X..of.Flight.with.other.Airlines <- as.numeric(as.character(data0$X..of.Flight.with.other.Airlines))
+data0$Price.Sensitivity <- as.numeric(as.character(data0$Price.Sensitivity))
+data0$No..of.other.Loyalty.Cards <- as.numeric(as.character(data0$No..of.other.Loyalty.Cards))
+
+
+data0$Eating.and.Drinking.at.Airport <- as.numeric(as.character(data0$Eating.and.Drinking.at.Airport))
+
+data0$Scheduled.Departure.Hour <- as.numeric(as.character(data0$Scheduled.Departure.Hour))
+data0$Departure.Delay.in.Minutes <- as.numeric(as.character(data0$Departure.Delay.in.Minutes))
+data0$Arrival.Delay.in.Minutes <- as.numeric(as.character(data0$Arrival.Delay.in.Minutes))
+data0$Flight.time.in.minutes <- as.numeric(as.character(data0$Flight.time.in.minutes))
+
+data0<-na.omit(data0)
+
+sapply(data0,function(x) sum(length(which(is.na(x)))))
+
 
