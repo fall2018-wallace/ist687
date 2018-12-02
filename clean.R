@@ -57,3 +57,24 @@ data0$Eating
 
 #data0<- data0[-c(21:22)]
 
+
+
+
+data0$Satisfaction <- as.numeric(as.character(data0$Satisfaction))
+data0$Price.Sensitivity <- as.numeric(as.character(data0$Price.Sensitivity))
+data0$Year.of.First.Flight <- as.numeric(as.character(data0$Year.of.First.Flight))
+data0$No.of.Flights.p.a. <- as.numeric(as.character(data0$No.of.Flights.p.a.))
+data0$X..of.Flight.with.other.Airlines <- as.numeric(as.character(data0$X..of.Flight.with.other.Airlines))
+data0$Price.Sensitivity <- as.numeric(as.character(data0$Price.Sensitivity))
+data0$No..of.other.Loyalty.Cards <- as.numeric(as.character(data0$No..of.other.Loyalty.Cards))
+data0$Eating.and.Drinking.at.Airport <- as.numeric(as.character(data0$Eating.and.Drinking.at.Airport))
+data0$Scheduled.Departure.Hour <- as.numeric(as.character(data0$Scheduled.Departure.Hour))
+data0$Departure.Delay.in.Minutes <- as.numeric(as.character(data0$Departure.Delay.in.Minutes))
+data0$Arrival.Delay.in.Minutes <- as.numeric(as.character(data0$Arrival.Delay.in.Minutes))
+data0$Flight.time.in.minutes <- as.numeric(as.character(data0$Flight.time.in.minutes))
+
+data0<-na.omit(data0)
+
+sapply(data0,function(x) sum(length(which(is.na(x))))) #to check which columns have NA
+
+
