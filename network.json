@@ -31,17 +31,6 @@
         {
             "ports": [
                 {
-                    "input": "data22",
-                    "output": "data0",
-                    "type": "r_obj"
-                }
-            ],
-            "source": "clean.R",
-            "target": "data_on_flights.R"
-        },
-        {
-            "ports": [
-                {
                     "input": "data00",
                     "output": "data0",
                     "type": "r_obj"
@@ -83,12 +72,13 @@
         {
             "ports": [
                 {
-                    "output": "lm1",
-                    "type": "png"
+                    "input": "data0",
+                    "output": "data1",
+                    "type": "r_obj"
                 }
             ],
-            "source": "travel_data.R",
-            "target": "traveldata111.png"
+            "source": "clean.R",
+            "target": "data_on_flights.R"
         }
     ],
     "nodes": [
@@ -132,6 +122,6 @@
             "task_status": "completed"
         }
     ],
-    "updated_at": "2018-12-02 01:16:30",
+    "updated_at": "2018-12-02 02:14:00",
     "url": "https://github.com/fall2018-wallace/ist687"
 }
