@@ -22,6 +22,5 @@ traveldata$Arrival.Delay.in.Minutes <- as.numeric(as.character(traveldata$Arriva
 traveldata$Flight.time.in.minutes <- as.numeric(as.character(traveldata$Flight.time.in.minutes))
 traveldata$Flight.Distance <- as.numeric(as.character(traveldata$Flight.Distance))
 
-#removing the additional NA
 traveldata<- na.omit(Satisfaction)
 
