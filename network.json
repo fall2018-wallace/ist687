@@ -120,8 +120,11 @@
             "desc": "travel related data\r\nexample : city , state, origin , destination, etc",
             "name": "travel_data.R",
             "task_status": "completed"
+        },
+        {
+            "name": "data01.csv"
         }
     ],
-    "updated_at": "2018-12-02 02:20:45",
+    "updated_at": "2018-12-02 02:26:09",
     "url": "https://github.com/fall2018-wallace/ist687"
 }
