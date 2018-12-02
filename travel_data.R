@@ -3,3 +3,4 @@
 traveldata<-data00
 #traveldata
 traveldata$Satisfaction
+traveldata$Eating
