@@ -79,6 +79,16 @@
             ],
             "source": "clean.R",
             "target": "data_on_flights.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "data01",
+                    "type": "csv"
+                }
+            ],
+            "source": "data_on_flights.R",
+            "target": "data01.csv"
         }
     ],
     "nodes": [
@@ -125,6 +135,6 @@
             "name": "data01.csv"
         }
     ],
-    "updated_at": "2018-12-02 02:26:09",
+    "updated_at": "2018-12-02 02:26:27",
     "url": "https://github.com/fall2018-wallace/ist687"
 }
