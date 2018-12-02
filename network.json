@@ -79,6 +79,16 @@
             ],
             "source": "travel_data.R",
             "target": "traveldata.csv"
+        },
+        {
+            "ports": [
+                {
+                    "output": "lm1",
+                    "type": "png"
+                }
+            ],
+            "source": "travel_data.R",
+            "target": "traveldata111.png"
         }
     ],
     "nodes": [
@@ -122,6 +132,6 @@
             "name": "traveldata111.png"
         }
     ],
-    "updated_at": "2018-12-02 01:15:59",
+    "updated_at": "2018-12-02 01:16:14",
     "url": "https://github.com/fall2018-wallace/ist687"
 }
