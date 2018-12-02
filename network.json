@@ -26,6 +26,49 @@
             ],
             "source": "satisfactionSurvey.csv",
             "target": "clean.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data11",
+                    "output": "data0",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "clean.R",
+            "target": "data_on_customers.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data22",
+                    "output": "data0",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "clean.R",
+            "target": "data_on_flights.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data00",
+                    "output": "data0",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "clean.R",
+            "target": "travel_data.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "hist0",
+                    "type": "png"
+                }
+            ],
+            "source": "clean.R",
+            "target": "hist0.png"
         }
     ],
     "nodes": [
@@ -48,18 +91,21 @@
             "task_status": "completed"
         },
         {
-            "assigned_to": "parshva11shah",
-            "desc": "Every column that has flight related data is handled\r\nexample: arrival time, departure times, delays, etc.",
-            "name": "data_on_flights.R",
-            "task_status": "validating"
-        },
-        {
             "assigned_to": "dasheth",
             "desc": "data related to customers.\r\nexample: age , gender, shopping, etc",
             "name": "data_on_customers.R",
             "task_status": "completed"
+        },
+        {
+            "assigned_to": "parshva11shah",
+            "desc": "Every column that has flight related data is handled\r\nexample: arrival time, departure times, delays, etc.",
+            "name": "data_on_flights.R",
+            "task_status": "completed"
+        },
+        {
+            "name": "hist0.png"
         }
     ],
-    "updated_at": "2018-11-29 18:01:22",
+    "updated_at": "2018-12-02 00:36:56",
     "url": "https://github.com/fall2018-wallace/ist687"
 }
