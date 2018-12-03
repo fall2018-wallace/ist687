@@ -74,23 +74,23 @@ sapply(data0,function(x) sum(length(which(is.na(x)))))
 #ggplots
 
 
-#Airline Status vs Overall Customer Satisfaction
+#1 Airline Status vs Overall Customer Satisfaction
 a1<-ggplot(data=datasatbyname, aes(Airline.Status,Satisfaction)) + geom_col()
 a2<-a1+geom_line()
 a2<-a2+theme(axis.text.x = element_text(angle = 90, hjust = 1))+ggtitle("Satisfaction per Airline Status")
 a2
 
-#age  vs Customer Satisfaction
+#2 age  vs Customer Satisfaction
 
 
-#Price Sensitivity  vs Satisfaction
+#3 Price Sensitivity  vs Satisfaction
 a3<-ggplot(data=datasatbyname, aes(Price.Sensitivity,Satisfaction)) + geom_col()
 a4<-a3+geom_line()
 a4<-a4+theme(axis.text.x = element_text(angle = 90, hjust = 1))+ggtitle("Satisfaction per Price Sensitivity")
 a4
 
 
-#Year of First Flight vs Satisfaction
+#4 Year of First Flight vs Satisfaction
 
 
 #Number of flights per anum vs Satisfaction
@@ -100,40 +100,92 @@ a6<-a6+theme(axis.text.x = element_text(angle = 90, hjust = 1))+ggtitle("Satisfa
 a6
 
 
-#X..of.Flight.with.other.Airlines vs Satisfaction
+#5 X..of.Flight.with.other.Airlines vs Satisfaction
 a7<-ggplot(data=datasatbyname, aes(No.of.Flights.p.a.,Satisfaction)) + geom_col()
 a8<-a7+geom_line()
 a8<-a8+theme(axis.text.x = element_text(angle = 90, hjust = 1))+ggtitle("Satisfaction per number of flights with other airlines")
 a8
 
 
-#Type.of.Travel vs Satisfaction
+#6 Type.of.Travel vs Satisfaction
 a9<-ggplot(data=datasatbyname, aes(Type.of.Travel,Satisfaction)) + geom_col()
 a10<-a9+geom_line()
 a10<-a10+theme(axis.text.x = element_text(angle = 90, hjust = 1))+ggtitle("Satisfaction per Type.of.Travel")
 a10
 
 
-#No..of.other.Loyalty.Cards vs Satisfaction
+#7 No..of.other.Loyalty.Cards vs Satisfaction
+a11<-ggplot(data=datasatbyname, aes(No..of.other.Loyalty.Cards,Satisfaction)) + geom_col()
+a12<-a11+geom_line()
+a12<-a12+theme(axis.text.x = element_text(angle = 90, hjust = 1))+ggtitle("Satisfaction per No..of.other.Loyalty.Cards")
+a12
 
-#Eating.and.Drinking.at.Airport vs Satisfaction
+#8 Eating.and.Drinking.at.Airport vs Satisfaction
+a13<-ggplot(data=datasatbyname, aes(Eating.and.Drinking.at.Airport,Satisfaction)) + geom_col()
+a14<-a13+geom_line()
+a14<-a14+theme(axis.text.x = element_text(angle = 90, hjust = 1))+ggtitle("Satisfaction per Eating.and.Drinking.at.Airport")
+a14
 
-#Class vs Satisfaction
 
-#Flight.date vs Satisfaction
+#9 Class vs Satisfaction
+a15<-ggplot(data=datasatbyname, aes(Class,Satisfaction)) + geom_col()
+a16<-a15+geom_line()
+a16<-a16+theme(axis.text.x = element_text(angle = 90, hjust = 1))+ggtitle("Satisfaction per Class")
+a16
 
-#Airline.Code vs Satisfaction
 
-#Orgin.City vs Satisfaction
+#10 Flight.date vs Satisfaction
+a17<-ggplot(data=datasatbyname, aes(Class,Satisfaction)) + geom_col()
+a18<-a17+geom_line()
+a18<-a18+theme(axis.text.x = element_text(angle = 90, hjust = 1))+ggtitle("Satisfaction per Class")
+a18
 
-#Destination.City vs Satisfaction
 
-#Scheduled.Departure.Hour vs Satisfaction
 
-#Departure.Delay.in.Minutes vs Satisfaction
+#11 Airline.Code vs Satisfaction
+a19<-ggplot(data=datasatbyname, aes(Airline.Code,Satisfaction)) + geom_col()
+a20<-a19+geom_line()
+a20<-a20+theme(axis.text.x = element_text(angle = 90, hjust = 1))+ggtitle("Satisfaction per Airline.Code")
+a20
 
-#Arrival.Delay.in.Minutes vs Satisfaction
+#12 Orgin.City vs Satisfaction
+a21<-ggplot(data=datasatbyname, aes(Orgin.City,Satisfaction)) + geom_col()
+a22<-a21+geom_line()
+a22<-a22+theme(axis.text.x = element_text(angle = 90, hjust = 1))+ggtitle("Satisfaction per Orgin.City")
+a22
 
-#Flight.cancelled vs Satisfaction
+#13 Destination.City vs Satisfaction
+a23<-ggplot(data=datasatbyname, aes(Destination.City,Satisfaction)) + geom_col()
+a24<-a23+geom_line()
+a24<-a24+theme(axis.text.x = element_text(angle = 90, hjust = 1))+ggtitle("Satisfaction per Destination.City")
+a24
 
-#Flight.time.in.minutes vs Satisfaction
+#14 Scheduled.Departure.Hour vs Satisfaction
+a25<-ggplot(data=datasatbyname, aes(Scheduled.Departure.Hour,Satisfaction)) + geom_col()
+a26<-a25+geom_line()
+a26<-a26+theme(axis.text.x = element_text(angle = 90, hjust = 1))+ggtitle("Satisfaction per Scheduled.Departure.Hour")
+a26
+
+#15 Departure.Delay.in.Minutes vs Satisfaction
+a27<-ggplot(data=datasatbyname, aes(Departure.Delay.in.Minutes,Satisfaction)) + geom_col()
+a28<-a27+geom_line()
+a28<-a28+theme(axis.text.x = element_text(angle = 90, hjust = 1))+ggtitle("Satisfaction per Departure.Delay.in.Minutes")
+a28
+
+#16 Arrival.Delay.in.Minutes vs Satisfaction
+a29<-ggplot(data=datasatbyname, aes(Departure.Delay.in.Minutes,Satisfaction)) + geom_col()
+a30<-a29+geom_line()
+a30<-a30+theme(axis.text.x = element_text(angle = 90, hjust = 1))+ggtitle("Satisfaction per Departure.Delay.in.Minutes")
+a30
+
+#17 Flight.cancelled vs Satisfaction
+a31<-ggplot(data=datasatbyname, aes(Flight.cancelled,Satisfaction)) + geom_col()
+a32<-a31+geom_line()
+a32<-a32+theme(axis.text.x = element_text(angle = 90, hjust = 1))+ggtitle("Satisfaction per Flight.cancelled")
+a32
+
+#18 Flight.time.in.minutes vs Satisfaction
+a33<-ggplot(data=datasatbyname, aes(Flight.time.in.minutes,Satisfaction)) + geom_col()
+a34<-a33+geom_line()
+a34<-a34+theme(axis.text.x = element_text(angle = 90, hjust = 1))+ggtitle("Satisfaction per Flight.time.in.minutes")
+a34
