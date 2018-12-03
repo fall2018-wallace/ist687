@@ -88,44 +88,38 @@ w1
 #ggplots2
 
 
-#Hotel size vs Overall Customer Satisfaction
+#Airline Status vs Overall Customer Satisfaction
 a1<-ggplot(data=datasatbyname, aes(Airline.Status,Satisfaction)) + geom_col()
 a2<-a1+geom_line()
 a2<-a2+theme(axis.text.x = element_text(angle = 90, hjust = 1))+ggtitle("Satisfaction per Airline Status")
 a2
 
-#Check_in satisfaction vs Customer Satisfaction
-CheckInSatplot<-ggplot(data = hotelSurvey1,aes(x=checkInSat,y=overallCustSat))+geom_point()
-CheckInSatplot +geom_jitter()+labs(x="Check-In Satisfacton",y="Overall Customer Satisfaction")
-
-#Hotel State vs Customer Satisfaction
-hotelStateplot<-ggplot(data = hotelSurvey1,aes(x=hotelState,y=overallCustSat))+geom_point()
-hotelStateplot+geom_jitter() +labs(x="Hotel State",y="Overall Customer Satisfaction")
+#age  vs Customer Satisfaction
 
 
-#Hotel cleanliness vs Customer Satisfaction
-hotelCleanplot<-ggplot(data = hotelSurvey1,aes(x=hotelClean,y=overallCustSat))+geom_point()
-hotelCleanplot +geom_jitter()+labs(x="Hotel State",y="Overall Customer Satisfaction")
+#Price Sensitivity  vs Customer Satisfaction
+a3<-ggplot(data=datasatbyname, aes(Price.Sensitivity,Satisfaction)) + geom_col()
+a4<-a3+geom_line()
+a4<-a4+theme(axis.text.x = element_text(angle = 90, hjust = 1))+ggtitle("Satisfaction per Price Sensitivity")
+a4
+
+
+#Year of First Flight vs Customer Satisfaction
+
 
 #Hotel Friendliness vs Custome Satisfaction
-hotelFriendlyplot<-ggplot(data = hotelSurvey1,aes(x=hotelFriendly,y=overallCustSat))+geom_point()
-hotelFriendlyplot +geom_jitter()+labs(x="hotel Friendliness",y="Overall Customer Satisfaction")
+
 
 #Gender vs Custome Satisfaction
-genderplot<-ggplot(data = hotelSurvey1,aes(x=gender,y=overallCustSat))+geom_point()
-genderplot +geom_jitter()+labs(x="hotelFriendliness",y="Overall Customer Satisfaction")
+
 
 
 #Guest Age vs Custome Satisfaction
-guestAgeplot<-ggplot(data = hotelSurvey1,aes(x=guestAge,y=overallCustSat))+geom_point()
-guestAgeplot +geom_jitter()+labs(x="Guest Age",y="Overall Customer Satisfaction")
+
 
 #Length of stay vs Custome Satisfaction
-lengthOfStayplot<-ggplot(data = hotelSurvey1,aes(x=lengthOfStay,y=overallCustSat))+geom_point()
-lengthOfStayplot +geom_jitter()+labs(x="Length of stay",y="Overall Customer Satisfaction")
 
 #When booked Trip vs Custome Satisfaction
-whenBookedTripplot<-ggplot(data = hotelSurvey1,aes(x=whenBookedTrip,y=overallCustSat))+geom_point()
-whenBookedTripplot +geom_jitter()+labs(x="When Booked",y="Overall Customer Satisfaction")
+
 
 
