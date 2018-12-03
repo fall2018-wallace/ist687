@@ -121,6 +121,8 @@ a14
 
 
 
+
+
 #10 Flight.date vs Satisfaction
 a17<-ggplot(data=datasatbyname, aes(Class,Satisfaction)) + geom_col()
 a18<-a17+geom_line()
