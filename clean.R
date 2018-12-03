@@ -154,8 +154,6 @@ a22<-a21+geom_line()
 a22<-a22+theme(axis.text.x = element_text(angle = 90, hjust = 1))+ggtitle("Satisfaction per Orgin.City")
 a22
 
-
-
 #Destination.City vs Satisfaction
 
 #Scheduled.Departure.Hour vs Satisfaction
