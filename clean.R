@@ -185,3 +185,7 @@ a32<-a32+theme(axis.text.x = element_text(angle = 90, hjust = 1))+ggtitle("Satis
 a32
 
 #Flight.time.in.minutes vs Satisfaction
+a33<-ggplot(data=datasatbyname, aes(Flight.time.in.minutes,Satisfaction)) + geom_col()
+a34<-a33+geom_line()
+a34<-a34+theme(axis.text.x = element_text(angle = 90, hjust = 1))+ggtitle("Satisfaction per Flight.time.in.minutes")
+a34
