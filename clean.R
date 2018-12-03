@@ -127,9 +127,6 @@ a14<-a14+theme(axis.text.x = element_text(angle = 90, hjust = 1))+ggtitle("Satis
 a14
 
 
-
-
-
 #10 Flight.date vs Satisfaction
 a17<-ggplot(data=datasatbyname, aes(Class,Satisfaction)) + geom_col()
 a18<-a17+geom_line()
