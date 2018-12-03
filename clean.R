@@ -143,10 +143,11 @@ a18
 
 
 #Airline.Code vs Satisfaction
-a17<-ggplot(data=datasatbyname, aes(Class,Satisfaction)) + geom_col()
-a18<-a17+geom_line()
-a18<-a18+theme(axis.text.x = element_text(angle = 90, hjust = 1))+ggtitle("Satisfaction per Class")
-a18
+a19<-ggplot(data=datasatbyname, aes(Airline.Code,Satisfaction)) + geom_col()
+a20<-a19+geom_line()
+a20<-a20+theme(axis.text.x = element_text(angle = 90, hjust = 1))+ggtitle("Satisfaction per Airline.Code")
+a20
+
 #Orgin.City vs Satisfaction
 
 #Destination.City vs Satisfaction
