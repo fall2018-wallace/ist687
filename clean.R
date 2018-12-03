@@ -66,3 +66,13 @@ data0<-na.omit(data0)
 sapply(data0,function(x) sum(length(which(is.na(x)))))
 
 
+
+
+
+
+
+
+
+#ggplots
+
+
