@@ -107,7 +107,11 @@ a4
 #Year of First Flight vs Customer Satisfaction
 
 
-#Hotel Friendliness vs Custome Satisfaction
+#Number of flights per anum vs Customer Satisfaction
+a5<-ggplot(data=datasatbyname, aes(Price.Sensitivity,Satisfaction)) + geom_col()
+a6<-a5+geom_line()
+a6<-a6+theme(axis.text.x = element_text(angle = 90, hjust = 1))+ggtitle("Satisfaction per Price Sensitivity")
+a6
 
 
 #Gender vs Custome Satisfaction
