@@ -46,6 +46,11 @@ a6
 
 
 
+#1 Airline Status vs Overall Customer Satisfaction
+a1<-ggplot(data=datasatbyname, aes(Airline.Status,Satisfaction)) + geom_col()
+a2<-a1+geom_line()
+a2<-a2+theme(axis.text.x = element_text(angle = 90, hjust = 1))+ggtitle("Satisfaction per Airline Status")
+a2
 
 
 
