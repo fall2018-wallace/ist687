@@ -41,6 +41,10 @@ data0<- data0[-c(21:22)] #extra arrival delay greater than 5 mins
 
 
 #clean
+data0$Flight.time.in.minutes <- as.character(data0$Flight.time.in.minutes)
+data0 <- data0[!is.na(data0$Flight.time.in.minutes),]
+
+
 data0$Satisfaction <- as.numeric(as.character(data0$Satisfaction))
 data0$Price.Sensitivity <- as.numeric(as.character(data0$Price.Sensitivity))
 data0$Year.of.First.Flight <- as.numeric(as.character(data0$Year.of.First.Flight))
@@ -62,3 +66,74 @@ data0<-na.omit(data0)
 sapply(data0,function(x) sum(length(which(is.na(x)))))
 
 
+
+
+
+
+
+#ggplots
+
+
+#Airline Status vs Overall Customer Satisfaction
+a1<-ggplot(data=datasatbyname, aes(Airline.Status,Satisfaction)) + geom_col()
+a2<-a1+geom_line()
+a2<-a2+theme(axis.text.x = element_text(angle = 90, hjust = 1))+ggtitle("Satisfaction per Airline Status")
+a2
+
+#age  vs Customer Satisfaction
+
+
+#Price Sensitivity  vs Satisfaction
+a3<-ggplot(data=datasatbyname, aes(Price.Sensitivity,Satisfaction)) + geom_col()
+a4<-a3+geom_line()
+a4<-a4+theme(axis.text.x = element_text(angle = 90, hjust = 1))+ggtitle("Satisfaction per Price Sensitivity")
+a4
+
+
+#Year of First Flight vs Satisfaction
+
+
+#Number of flights per anum vs Satisfaction
+a5<-ggplot(data=datasatbyname, aes(No.of.Flights.p.a.,Satisfaction)) + geom_col()
+a6<-a5+geom_line()
+a6<-a6+theme(axis.text.x = element_text(angle = 90, hjust = 1))+ggtitle("Satisfaction per number of flights per anum")
+a6
+
+
+#X..of.Flight.with.other.Airlines vs Satisfaction
+a7<-ggplot(data=datasatbyname, aes(No.of.Flights.p.a.,Satisfaction)) + geom_col()
+a8<-a7+geom_line()
+a8<-a8+theme(axis.text.x = element_text(angle = 90, hjust = 1))+ggtitle("Satisfaction per number of flights with other airlines")
+a8
+
+
+#Type.of.Travel vs Satisfaction
+a9<-ggplot(data=datasatbyname, aes(Type.of.Travel,Satisfaction)) + geom_col()
+a10<-a9+geom_line()
+a10<-a10+theme(axis.text.x = element_text(angle = 90, hjust = 1))+ggtitle("Satisfaction per Type.of.Travel")
+a10
+
+
+#No..of.other.Loyalty.Cards vs Satisfaction
+
+#Eating.and.Drinking.at.Airport vs Satisfaction
+
+#Class vs Satisfaction
+
+#Flight.date vs Satisfaction
+
+#Airline.Code vs Satisfaction
+
+#Orgin.City vs Satisfaction
+
+#Destination.City vs Satisfaction
+
+#Scheduled.Departure.Hour vs Satisfaction
+
+#Departure.Delay.in.Minutes vs Satisfaction
+
+#Arrival.Delay.in.Minutes vs Satisfaction
+
+#Flight.cancelled vs Satisfaction
+
+#Flight.time.in.minutes vs Satisfaction
