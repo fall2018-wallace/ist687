@@ -17,3 +17,5 @@ w1<-w1+theme(axis.text.x = element_text(angle = 90, hjust = 1))+ggtitle("Satisfa
 w1
 
 #linear modelling
+lmExperience <- lm(formula=Satisfaction~Year.of.First.Flight+No.of.Flights.p.a.+No..of.other.Loyalty.Cards+Airline.Status+Type.of.Travel+Class, data = data0)
+summary(lmExperience)
