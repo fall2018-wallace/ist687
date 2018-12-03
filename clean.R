@@ -115,11 +115,17 @@ a10
 
 
 #No..of.other.Loyalty.Cards vs Satisfaction
-a9<-ggplot(data=datasatbyname, aes(Type.of.Travel,Satisfaction)) + geom_col()
-a10<-a9+geom_line()
-a10<-a10+theme(axis.text.x = element_text(angle = 90, hjust = 1))+ggtitle("Satisfaction per Type.of.Travel")
-a10
+a11<-ggplot(data=datasatbyname, aes(No..of.other.Loyalty.Cards,Satisfaction)) + geom_col()
+a12<-a11+geom_line()
+a12<-a12+theme(axis.text.x = element_text(angle = 90, hjust = 1))+ggtitle("Satisfaction per No..of.other.Loyalty.Cards")
+a12
+
 #Eating.and.Drinking.at.Airport vs Satisfaction
+a13<-ggplot(data=datasatbyname, aes(Eating.and.Drinking.at.Airport,Satisfaction)) + geom_col()
+a14<-a13+geom_line()
+a14<-a14+theme(axis.text.x = element_text(angle = 90, hjust = 1))+ggtitle("Satisfaction per Eating.and.Drinking.at.Airport")
+a14
+
 
 #Class vs Satisfaction
 
