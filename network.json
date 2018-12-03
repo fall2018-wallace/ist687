@@ -52,16 +52,6 @@
         {
             "ports": [
                 {
-                    "output": "data0",
-                    "type": "csv"
-                }
-            ],
-            "source": "clean.R",
-            "target": "data.csv"
-        },
-        {
-            "ports": [
-                {
                     "output": "traveldata",
                     "type": "csv"
                 }
@@ -89,6 +79,16 @@
             ],
             "source": "data_on_flights.R",
             "target": "data01.csv"
+        },
+        {
+            "ports": [
+                {
+                    "output": "data0",
+                    "type": "csv"
+                }
+            ],
+            "source": "clean.R",
+            "target": "data.csv"
         }
     ],
     "nodes": [
@@ -102,12 +102,6 @@
             "assigned_to": "sshete",
             "desc": "",
             "name": "clean.R",
-            "task_status": "completed"
-        },
-        {
-            "assigned_to": "dasheth",
-            "desc": "data related to customers.\r\nexample: age , gender, shopping, etc",
-            "name": "data_on_customers.R",
             "task_status": "completed"
         },
         {
@@ -133,8 +127,14 @@
         },
         {
             "name": "data01.csv"
+        },
+        {
+            "assigned_to": "dasheth",
+            "desc": "data related to customers.\r\nexample: age , gender, shopping, etc",
+            "name": "data_on_customers.R",
+            "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-12-02 03:10:05",
+    "updated_at": "2018-12-03 19:19:03",
     "url": "https://github.com/fall2018-wallace/ist687"
 }
