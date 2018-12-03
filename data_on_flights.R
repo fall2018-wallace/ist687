@@ -35,6 +35,23 @@ a16<-a15+geom_line()
 a16<-a16+theme(axis.text.x = element_text(angle = 90, hjust = 1))+ggtitle("Satisfaction per Class")
 a16
 
+#4 Year of First Flight vs Satisfaction
+
+
+#5 Number of flights per anum vs Satisfaction
+a5<-ggplot(data=datasatbyname, aes(No.of.Flights.p.a.,Satisfaction)) + geom_col()
+a6<-a5+geom_line()
+a6<-a6+theme(axis.text.x = element_text(angle = 90, hjust = 1))+ggtitle("Satisfaction per number of flights per anum")
+a6
+
+
+
+
+
+
+
+
+
 #linear modelling
 lmExperience <- lm(formula=Satisfaction~Year.of.First.Flight+No.of.Flights.p.a.+No..of.other.Loyalty.Cards+Airline.Status+Type.of.Travel+Class, data = data0)
 summary(lmExperience)
