@@ -75,4 +75,16 @@ sapply(data0,function(x) sum(length(which(is.na(x)))))
 
 #ggplots
 
+w<-ggplot(data=datasatbyname, aes(Airline.Name,Satisfaction)) + geom_col()
+w1<-w+geom_line()
+w1<-w1+theme(axis.text.x = element_text(angle = 90, hjust = 1))+ggtitle("Satisfaction per Airline")
+w1
+
+
+
+
+
+
+#ggplots
+
 
