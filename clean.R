@@ -98,6 +98,7 @@ a5<-ggplot(data=datasatbyname, aes(No.of.Flights.p.a.,Satisfaction)) + geom_col(
 a6<-a5+geom_line()
 a6<-a6+theme(axis.text.x = element_text(angle = 90, hjust = 1))+ggtitle("Satisfaction per number of flights per anum")
 a6
+
 #9 class vs Satisfaction
 a15<-ggplot(data=datasatbyname, aes(Class,Satisfaction)) + geom_col()
 a16<-a15+geom_line()
