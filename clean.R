@@ -136,6 +136,12 @@ a10
 
 #Flight.date vs Custome Satisfaction
 
+#Airline.Code vs Custome Satisfaction
+
+#Orgin.City vs Custome Satisfaction
+
+#Destination.City vs Custome Satisfaction
+
 #Flight.date vs Custome Satisfaction
 
 #Flight.date vs Custome Satisfaction
