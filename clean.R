@@ -114,8 +114,11 @@ a6<-a6+theme(axis.text.x = element_text(angle = 90, hjust = 1))+ggtitle("Satisfa
 a6
 
 
-#Gender vs Custome Satisfaction
-
+#X..of.Flight.with.other.Airlines vs Custome Satisfaction
+a7<-ggplot(data=datasatbyname, aes(No.of.Flights.p.a.,Satisfaction)) + geom_col()
+a8<-a7+geom_line()
+a8<-a8+theme(axis.text.x = element_text(angle = 90, hjust = 1))+ggtitle("Satisfaction per number of flights with other airlines")
+a8
 
 
 #Guest Age vs Custome Satisfaction
