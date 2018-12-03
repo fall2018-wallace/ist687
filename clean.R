@@ -155,10 +155,11 @@ a22<-a22+theme(axis.text.x = element_text(angle = 90, hjust = 1))+ggtitle("Satis
 a22
 
 #Destination.City vs Satisfaction
-a21<-ggplot(data=datasatbyname, aes(Orgin.City,Satisfaction)) + geom_col()
-a22<-a21+geom_line()
-a22<-a22+theme(axis.text.x = element_text(angle = 90, hjust = 1))+ggtitle("Satisfaction per Orgin.City")
-a22
+a23<-ggplot(data=datasatbyname, aes(Orgin.City,Satisfaction)) + geom_col()
+a24<-a23+geom_line()
+a24<-a24+theme(axis.text.x = element_text(angle = 90, hjust = 1))+ggtitle("Satisfaction per Orgin.City")
+a24
+
 #Scheduled.Departure.Hour vs Satisfaction
 
 #Departure.Delay.in.Minutes vs Satisfaction
