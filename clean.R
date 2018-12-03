@@ -128,6 +128,11 @@ a14
 
 
 #Class vs Satisfaction
+a15<-ggplot(data=datasatbyname, aes(Class,Satisfaction)) + geom_col()
+a16<-a15+geom_line()
+a16<-a16+theme(axis.text.x = element_text(angle = 90, hjust = 1))+ggtitle("Satisfaction per Class")
+a16
+
 
 #Flight.date vs Satisfaction
 
