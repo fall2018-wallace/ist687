@@ -128,9 +128,9 @@ a10<-a10+theme(axis.text.x = element_text(angle = 90, hjust = 1))+ggtitle("Satis
 a10
 
 
-#Length of stay vs Custome Satisfaction
+#No..of.other.Loyalty.Cards vs Custome Satisfaction
 
-#When booked Trip vs Custome Satisfaction
+#Eating.and.Drinking.at.Airport vs Custome Satisfaction
 
-
+#Class vs Custome Satisfaction
 
