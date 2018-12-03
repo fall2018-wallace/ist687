@@ -7,3 +7,5 @@ traveldata$Satisfaction
 
 
 #ggplots
+
+#lm
