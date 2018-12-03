@@ -97,57 +97,57 @@ a2
 #age  vs Customer Satisfaction
 
 
-#Price Sensitivity  vs Customer Satisfaction
+#Price Sensitivity  vs Satisfaction
 a3<-ggplot(data=datasatbyname, aes(Price.Sensitivity,Satisfaction)) + geom_col()
 a4<-a3+geom_line()
 a4<-a4+theme(axis.text.x = element_text(angle = 90, hjust = 1))+ggtitle("Satisfaction per Price Sensitivity")
 a4
 
 
-#Year of First Flight vs Customer Satisfaction
+#Year of First Flight vs Satisfaction
 
 
-#Number of flights per anum vs Customer Satisfaction
+#Number of flights per anum vs Satisfaction
 a5<-ggplot(data=datasatbyname, aes(No.of.Flights.p.a.,Satisfaction)) + geom_col()
 a6<-a5+geom_line()
 a6<-a6+theme(axis.text.x = element_text(angle = 90, hjust = 1))+ggtitle("Satisfaction per number of flights per anum")
 a6
 
 
-#X..of.Flight.with.other.Airlines vs Custome Satisfaction
+#X..of.Flight.with.other.Airlines vs Satisfaction
 a7<-ggplot(data=datasatbyname, aes(No.of.Flights.p.a.,Satisfaction)) + geom_col()
 a8<-a7+geom_line()
 a8<-a8+theme(axis.text.x = element_text(angle = 90, hjust = 1))+ggtitle("Satisfaction per number of flights with other airlines")
 a8
 
 
-#Type.of.Travel vs Custome Satisfaction
+#Type.of.Travel vs Satisfaction
 a9<-ggplot(data=datasatbyname, aes(Type.of.Travel,Satisfaction)) + geom_col()
 a10<-a9+geom_line()
 a10<-a10+theme(axis.text.x = element_text(angle = 90, hjust = 1))+ggtitle("Satisfaction per Type.of.Travel")
 a10
 
 
-#No..of.other.Loyalty.Cards vs Custome Satisfaction
+#No..of.other.Loyalty.Cards vs Satisfaction
 
-#Eating.and.Drinking.at.Airport vs Custome Satisfaction
+#Eating.and.Drinking.at.Airport vs Satisfaction
 
-#Class vs Custome Satisfaction
+#Class vs Satisfaction
 
-#Flight.date vs Custome Satisfaction
+#Flight.date vs Satisfaction
 
-#Airline.Code vs Custome Satisfaction
+#Airline.Code vs Satisfaction
 
-#Orgin.City vs Custome Satisfaction
+#Orgin.City vs Satisfaction
 
-#Destination.City vs Custome Satisfaction
+#Destination.City vs Satisfaction
 
-#Flight.date vs Custome Satisfaction
+#Scheduled.Departure.Hour vs Satisfaction
 
-#Flight.date vs Custome Satisfaction
+#Departure.Delay.in.Minutes vs Satisfaction
 
-#Flight.date vs Custome Satisfaction
+#Arrival.Delay.in.Minutes vs Satisfaction
 
-#Flight.date vs Custome Satisfaction
+#Flight.cancelled vs Satisfaction
 
-
+#Flight.time.in.minutes vs Satisfaction
