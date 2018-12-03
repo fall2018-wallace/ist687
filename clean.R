@@ -107,18 +107,6 @@ a8<-a8+theme(axis.text.x = element_text(angle = 90, hjust = 1))+ggtitle("Satisfa
 a8
 
 
-#6 Type.of.Travel vs Satisfaction
-a9<-ggplot(data=datasatbyname, aes(Type.of.Travel,Satisfaction)) + geom_col()
-a10<-a9+geom_line()
-a10<-a10+theme(axis.text.x = element_text(angle = 90, hjust = 1))+ggtitle("Satisfaction per Type.of.Travel")
-a10
-
-
-#7 No..of.other.Loyalty.Cards vs Satisfaction
-a11<-ggplot(data=datasatbyname, aes(No..of.other.Loyalty.Cards,Satisfaction)) + geom_col()
-a12<-a11+geom_line()
-a12<-a12+theme(axis.text.x = element_text(angle = 90, hjust = 1))+ggtitle("Satisfaction per No..of.other.Loyalty.Cards")
-a12
 
 #8 Eating.and.Drinking.at.Airport vs Satisfaction
 a13<-ggplot(data=datasatbyname, aes(Eating.and.Drinking.at.Airport,Satisfaction)) + geom_col()
