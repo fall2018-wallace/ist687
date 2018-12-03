@@ -179,5 +179,9 @@ a30<-a30+theme(axis.text.x = element_text(angle = 90, hjust = 1))+ggtitle("Satis
 a30
 
 #Flight.cancelled vs Satisfaction
+a31<-ggplot(data=datasatbyname, aes(Departure.Delay.in.Minutes,Satisfaction)) + geom_col()
+a32<-a31+geom_line()
+a32<-a32+theme(axis.text.x = element_text(angle = 90, hjust = 1))+ggtitle("Satisfaction per Departure.Delay.in.Minutes")
+a32
 
 #Flight.time.in.minutes vs Satisfaction
