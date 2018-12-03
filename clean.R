@@ -121,7 +121,11 @@ a8<-a8+theme(axis.text.x = element_text(angle = 90, hjust = 1))+ggtitle("Satisfa
 a8
 
 
-#Guest Age vs Custome Satisfaction
+#Type.of.Travel vs Custome Satisfaction
+a9<-ggplot(data=datasatbyname, aes(Type.of.Travel,Satisfaction)) + geom_col()
+a10<-a9+geom_line()
+a10<-a10+theme(axis.text.x = element_text(angle = 90, hjust = 1))+ggtitle("Satisfaction per Type.of.Travel")
+a10
 
 
 #Length of stay vs Custome Satisfaction
