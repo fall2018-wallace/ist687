@@ -80,9 +80,6 @@ a2<-a1+geom_line()
 a2<-a2+theme(axis.text.x = element_text(angle = 90, hjust = 1))+ggtitle("Satisfaction per Airline Status")
 a2
 
-
-
-
 #2 age  vs Customer Satisfaction
 
 
@@ -93,7 +90,19 @@ a4<-a4+theme(axis.text.x = element_text(angle = 90, hjust = 1))+ggtitle("Satisfa
 a4
 
 
+#4 Year of First Flight vs Satisfaction
 
+
+#Number of flights per anum vs Satisfaction
+a5<-ggplot(data=datasatbyname, aes(No.of.Flights.p.a.,Satisfaction)) + geom_col()
+a6<-a5+geom_line()
+a6<-a6+theme(axis.text.x = element_text(angle = 90, hjust = 1))+ggtitle("Satisfaction per number of flights per anum")
+a6
+#9 class vs Satisfaction
+a15<-ggplot(data=datasatbyname, aes(Class,Satisfaction)) + geom_col()
+a16<-a15+geom_line()
+a16<-a16+theme(axis.text.x = element_text(angle = 90, hjust = 1))+ggtitle("Satisfaction per Class")
+a16
 
 #5 X..of.Flight.with.other.Airlines vs Satisfaction
 a7<-ggplot(data=datasatbyname, aes(No.of.Flights.p.a.,Satisfaction)) + geom_col()
@@ -110,11 +119,6 @@ a14<-a14+theme(axis.text.x = element_text(angle = 90, hjust = 1))+ggtitle("Satis
 a14
 
 
-#10 Flight.date vs Satisfaction
-a15<-ggplot(data=datasatbyname, aes(Class,Satisfaction)) + geom_col()
-a16<-a15+geom_line()
-a16<-a16+theme(axis.text.x = element_text(angle = 90, hjust = 1))+ggtitle("Satisfaction per Class")
-a16
 
 #10 Flight.date vs Satisfaction
 a17<-ggplot(data=datasatbyname, aes(Class,Satisfaction)) + geom_col()
