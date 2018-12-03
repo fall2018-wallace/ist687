@@ -149,6 +149,12 @@ a20<-a20+theme(axis.text.x = element_text(angle = 90, hjust = 1))+ggtitle("Satis
 a20
 
 #Orgin.City vs Satisfaction
+a21<-ggplot(data=datasatbyname, aes(Orgin.City,Satisfaction)) + geom_col()
+a22<-a21+geom_line()
+a22<-a22+theme(axis.text.x = element_text(angle = 90, hjust = 1))+ggtitle("Satisfaction per Orgin.City")
+a22
+
+
 
 #Destination.City vs Satisfaction
 
