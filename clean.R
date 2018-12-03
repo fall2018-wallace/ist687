@@ -161,6 +161,10 @@ a24<-a24+theme(axis.text.x = element_text(angle = 90, hjust = 1))+ggtitle("Satis
 a24
 
 #Scheduled.Departure.Hour vs Satisfaction
+a23<-ggplot(data=datasatbyname, aes(Scheduled.Departure.Hour,Satisfaction)) + geom_col()
+a24<-a23+geom_line()
+a24<-a24+theme(axis.text.x = element_text(angle = 90, hjust = 1))+ggtitle("Satisfaction per Scheduled.Departure.Hour")
+a24
 
 #Departure.Delay.in.Minutes vs Satisfaction
 
