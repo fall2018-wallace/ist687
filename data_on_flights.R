@@ -36,7 +36,10 @@ a16<-a16+theme(axis.text.x = element_text(angle = 90, hjust = 1))+ggtitle("Satis
 a16
 
 #4 Year of First Flight vs Satisfaction
-
+a51<-ggplot(data=datasatbyname, aes(Year.of.First.Flight,Satisfaction)) + geom_col()
+a61<-a51+geom_line()
+a61<-a61+theme(axis.text.x = element_text(angle = 90, hjust = 1))+ggtitle("Satisfaction per Year.of.First.Flight")
+a61
 
 #5 Number of flights per anum vs Satisfaction
 a5<-ggplot(data=datasatbyname, aes(No.of.Flights.p.a.,Satisfaction)) + geom_col()
