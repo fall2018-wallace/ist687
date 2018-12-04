@@ -9,7 +9,10 @@ summary(lmCustomers)
 #ggplots
 
 #2 age  vs Customer Satisfaction
-
+age<-ggplot(data=datasatbyname, aes(age,Satisfaction)) + geom_col()
+age1<-age+geom_line()
+age1<-age1+theme(axis.text.x = element_text(angle = 90, hjust = 1))+ggtitle("Satisfaction per age")
+age1
 
 #3 Price Sensitivity  vs Satisfaction
 a3<-ggplot(data=datasatbyname, aes(Price.Sensitivity,Satisfaction)) + geom_col()
