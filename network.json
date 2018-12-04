@@ -133,8 +133,11 @@
             "desc": "data related to customers.\r\nexample: age , gender, shopping, etc",
             "name": "data_on_customers.R",
             "task_status": "in progress"
+        },
+        {
+            "name": "w1.png"
         }
     ],
-    "updated_at": "2018-12-03 19:19:03",
+    "updated_at": "2018-12-04 00:20:03",
     "url": "https://github.com/fall2018-wallace/ist687"
 }
