@@ -28,9 +28,9 @@ a14<-a14+theme(axis.text.x = element_text(angle = 90, hjust = 1))+ggtitle("Satis
 a14
 
 #10 Flight.date vs Satisfaction
-a17<-ggplot(data=datasatbyname, aes(Class,Satisfaction)) + geom_col()
+a17<-ggplot(data=datasatbyname, aes(Flight.date,Satisfaction)) + geom_col()
 a18<-a17+geom_line()
-a18<-a18+theme(axis.text.x = element_text(angle = 90, hjust = 1))+ggtitle("Satisfaction per Class")
+a18<-a18+theme(axis.text.x = element_text(angle = 90, hjust = 1))+ggtitle("Satisfaction per Flight.date")
 a18
 
 #11 Airline.Code vs Satisfaction
