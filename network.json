@@ -139,6 +139,16 @@
             ],
             "source": "data_on_flights.R",
             "target": "a61.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "a6",
+                    "type": "png"
+                }
+            ],
+            "source": "data_on_flights.R",
+            "target": "a6.png"
         }
     ],
     "nodes": [
@@ -203,6 +213,6 @@
             "name": "a6.png"
         }
     ],
-    "updated_at": "2018-12-04 00:21:58",
+    "updated_at": "2018-12-04 00:22:06",
     "url": "https://github.com/fall2018-wallace/ist687"
 }
