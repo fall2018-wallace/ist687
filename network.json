@@ -89,6 +89,76 @@
             ],
             "source": "clean.R",
             "target": "data.csv"
+        },
+        {
+            "ports": [
+                {
+                    "output": "w1",
+                    "type": "png"
+                }
+            ],
+            "source": "data_on_flights.R",
+            "target": "w1.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "a10",
+                    "type": "png"
+                }
+            ],
+            "source": "data_on_flights.R",
+            "target": "a10.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "a12",
+                    "type": "png"
+                }
+            ],
+            "source": "data_on_flights.R",
+            "target": "a12.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "a16",
+                    "type": "png"
+                }
+            ],
+            "source": "data_on_flights.R",
+            "target": "a16.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "a61",
+                    "type": "png"
+                }
+            ],
+            "source": "data_on_flights.R",
+            "target": "a61.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "a6",
+                    "type": "png"
+                }
+            ],
+            "source": "data_on_flights.R",
+            "target": "a6.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "a2",
+                    "type": "png"
+                }
+            ],
+            "source": "data_on_flights.R",
+            "target": "a2.png"
         }
     ],
     "nodes": [
@@ -133,8 +203,29 @@
             "desc": "data related to customers.\r\nexample: age , gender, shopping, etc",
             "name": "data_on_customers.R",
             "task_status": "in progress"
+        },
+        {
+            "name": "w1.png"
+        },
+        {
+            "name": "a10.png"
+        },
+        {
+            "name": "a12.png"
+        },
+        {
+            "name": "a16.png"
+        },
+        {
+            "name": "a61.png"
+        },
+        {
+            "name": "a6.png"
+        },
+        {
+            "name": "a2.png"
         }
     ],
-    "updated_at": "2018-12-03 19:19:03",
+    "updated_at": "2018-12-04 00:22:19",
     "url": "https://github.com/fall2018-wallace/ist687"
 }
