@@ -2,9 +2,11 @@
 data11<-data0
 
 
-
+#linear modelling
 lmCustomers <- lm(formula=Satisfaction~Age+Price.Sensitivity+Eating.and.Drinking.at.Airport, data = data0)
 summary(lmCustomers)
+
+#ggplots
 
 #2 age  vs Customer Satisfaction
 
