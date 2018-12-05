@@ -10,7 +10,7 @@ traveldatacleaned$Satisfaction<-as.numeric(traveldatacleaned$Satisfaction)
 #summary(traveldatacleaned) 
  
 modelOfAirlineStatus<-lm(formula = Satisfaction~Airline.Status, data = traveldatacleaned)
-modelOfAirlineStatus
+#modelOfAirlineStatus
 #summary(modelOfAirlineStatus)
 
  modelOfAge<-lm(formula = Satisfaction~Age, data = traveldatacleaned)
