@@ -83,16 +83,6 @@
         {
             "ports": [
                 {
-                    "output": "data0",
-                    "type": "csv"
-                }
-            ],
-            "source": "clean.R",
-            "target": "data.csv"
-        },
-        {
-            "ports": [
-                {
                     "output": "w1",
                     "type": "png"
                 }
@@ -159,6 +149,16 @@
             ],
             "source": "data_on_flights.R",
             "target": "a2.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "data0",
+                    "type": "csv"
+                }
+            ],
+            "source": "clean.R",
+            "target": "data.csv"
         }
     ],
     "nodes": [
@@ -226,6 +226,6 @@
             "name": "a2.png"
         }
     ],
-    "updated_at": "2018-12-04 00:22:19",
+    "updated_at": "2018-12-04 01:43:15",
     "url": "https://github.com/fall2018-wallace/ist687"
 }
