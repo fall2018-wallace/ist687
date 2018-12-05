@@ -7,7 +7,7 @@ traveldata$Flight.time.in.minutes <- ifelse(is.na(traveldata$Flight.time.in.minu
 traveldatacleaned<- traveldata[-(is.na(traveldata$Arrival.Delay.in.Minutes)),] 
 traveldatacleaned<- na.omit(traveldata) 
 traveldatacleaned$Satisfaction<-as.numeric(traveldatacleaned$Satisfaction)
- summary(traveldatacleaned) 
+# summary(traveldatacleaned) 
  
 modelOfAirlineStatus<-lm(formula = Satisfaction~Airline.Status, data = traveldatacleaneddataCleaned)
 # summary(modelOfAirlineStatus)
