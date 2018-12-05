@@ -7,4 +7,4 @@ traveldata$Flight.time.in.minutes <- ifelse(is.na(traveldata$Flight.time.in.minu
 df<- traveldata[-(is.na(traveldata$Arrival.Delay.in.Minutes)),] 
 df<- na.omit(traveldata) 
  summary(df) #$str(df) View(df)  
-
+traveldata$Satisfaction<-as.numeric(traveldata$Satisfaction)
