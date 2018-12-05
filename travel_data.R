@@ -4,8 +4,9 @@ traveldata<-data00
 #traveldata
 traveldata$Satisfaction <- as.numeric(as.character(traveldata$Satisfaction))
 traveldata$Satisfaction
+lmFlight <- lm(formula=Satisfaction~Scheduled.Departure.Hour+Departure.Delay.in.Minutes+Arrival.Delay.in.Minutes+Flight.time.in.minutes, data = data0)
+summary(lmFlight)
 
-library(ggplot)
 #ggplots
 #14 Scheduled.Departure.Hour vs Satisfaction
 a25<-ggplot(data=datasatbyname, aes(Scheduled.Departure.Hour,Satisfaction)) + geom_col()
