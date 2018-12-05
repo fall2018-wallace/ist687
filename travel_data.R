@@ -5,7 +5,7 @@ traveldata<-data00
 traveldata$Satisfaction <- as.numeric(as.character(traveldata$Satisfaction))
 traveldata$Satisfaction
 
-
+library(ggplots)
 #ggplots
 #14 Scheduled.Departure.Hour vs Satisfaction
 a25<-ggplot(data=datasatbyname, aes(Scheduled.Departure.Hour,Satisfaction)) + geom_col()
