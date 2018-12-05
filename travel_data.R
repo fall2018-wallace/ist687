@@ -43,6 +43,8 @@ dim(trainData) # Checking the dimension
 
 dim(testData) # Checking the dimension
 
+library(kernlab)
+
 svmOutput<-ksvm(HappyCust~Airline_Status+Age , data = trainData, kernel= "rbfdot", kpar = "automatic", C = 5, cross = 3, prob.model = TRUE)
 svmOutput
 
