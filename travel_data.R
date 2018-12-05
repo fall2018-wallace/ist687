@@ -41,5 +41,5 @@ traveldata<-data00
 
 
 #linear model
-lmFlight <- lm(formula=Satisfaction~Scheduled.Departure.Hour+Departure.Delay.in.Minutes+Arrival.Delay.in.Minutes+Flight.time.in.minutes, data = data00)
-summary(lmFlight)
+#lmFlight <- lm(formula=Satisfaction~Scheduled.Departure.Hour+Departure.Delay.in.Minutes+Arrival.Delay.in.Minutes+Flight.time.in.minutes, data = data00)
+#summary(lmFlight)
