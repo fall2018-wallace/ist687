@@ -5,7 +5,6 @@ data0<- clean_data
 data0<- data.frame(null.values= NA)
 data0<- data0[,-4]
 
-data0<-data0[,-13]
 
 
 
