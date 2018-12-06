@@ -19,12 +19,15 @@ summary(traveldata)
 
 #modelOfAge<-lm(formula = Satisfaction~Age, data = traveldatacleaned)
 #summary(modelOfAge)
-
+#Flight.cancelled   #Flight.time.in.minutes #Flight.Distance
 #modelOfLoyalty<-lm(formula = Satisfaction~No..of.other.Loyalty.Cards,data = traveldatacleaned)
 #modelOfInfluencingFactors<-lm(formula = Satisfaction ~ Flight_time_in_minutes+Flight_cancelled+Arrival_Delay_in_Minutes+Departure_Delay_in_Minutes+Scheduled_Departure_Hour+Destination_State+Destination_City+Origin_State+Orgin_City+Flight_date+Day_of_Month+Class+Eating_and_Drinking_at_Airport+Shopping_Amount_at_Airport+No__of_other_Loyalty_Cards+Type_of_Travel+X__of_Flight_with_other_Airlines+No_of_Flights_p_a_+Year_of_First_Flight+Price_Sensitivity+Gender+Age+Airline_Status,data= traveldatacleaned)
 #summary(modelOfInfluencingFactors)
-modelOfLoyalty<-lm(formula = Satisfaction~No..of.other.Loyalty.Cards,data = traveldatacleaned)
-summary(modelOfLoyalty)
+###############################################################################
+#modelOfLoyalty<-lm(formula = Satisfaction~No..of.other.Loyalty.Cards,data = traveldatacleaned)
+#summary(modelOfLoyalty)
+modelOfAirlineStatus<-lm(formula = Satisfaction~Airline.Status, data = traveldatacleaned)
+summary(modelOfAirlineStatus)
 #lmCustomers <- lm(formula=Satisfaction~Age+Price.Sensitivity+Shopping.Amount.at.Airport+Eating.and.Drinking.at.Airport, data = traveldatacleaned)
 #summary(lmCustomers)
 
