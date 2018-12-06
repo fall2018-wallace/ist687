@@ -70,7 +70,7 @@ summary(traveldata)
 #summary(modelOfDS)
 #modelOfFD<-lm(formula = Satisfaction~Flight.date,data = traveldatacleaned)
 #summary(modelOfFD)
-lmAll <- lm(formula=Satisfaction~Age+Price.Sensitivity+Shopping.Amount.at.Airport+Year.of.First.Flight+No.of.Flights.p.a.+No..of.other.Loyalty.Cards+Type.of.Travel+Class+Scheduled.Departure.Hour+Arrival.Delay.greater.5.Mins, data = traveldatacleaned)
+lmAll <- lm(formula=Satisfaction~Age+Price.Sensitivity+Shopping.Amount.at.Airport+Year.of.First.Flight+No.of.Flights.p.a.+No..of.other.Loyalty.Cards+Airline.Status+Type.of.Travel+Class+Scheduled.Departure.Hour+Arrival.Delay.greater.5.Mins, data = traveldatacleaned)
 summary(lmAll)
 
 ##########################################################################################                 
