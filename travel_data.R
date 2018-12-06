@@ -40,9 +40,10 @@ summary(traveldata)
 #summary(modelOfDOM)
 #modelOfQ<-lm(formula = Satisfaction~Shopping.Amount.at.Airport+Eating.and.Drinking.at.Airport,data = traveldatacleaned)
 #summary(modelOfQ)
-modelOfClass<-lm(formula = Satisfaction~Class,data = traveldatacleaned)
-summary(modelOfClass)
-  
+#modelOfClass<-lm(formula = Satisfaction~Class,data = traveldatacleaned)
+#summary(modelOfClass)
+modelOfNOF<-lm(formula = Satisfaction~No.of.Flights.p.a.,data = traveldatacleaned)
+summary(modelOfNOF)
 
 
 #index <- 1:nrow(traveldatacleaned)
