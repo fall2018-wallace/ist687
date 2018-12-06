@@ -58,6 +58,7 @@ summary(traveldata)
 #summary(modelOfALL)
 #modelOfCancelled<-lm(formula = Satisfaction~Flight.cancelled,data = traveldatacleaned)
 #summary(modelOfCancelled)
+Scheduled.Departure.Hour
 #                  Gender
 #index <- 1:nrow(traveldatacleaned)
 #testindex <- sample(index, trunc(length(index)/3))
