@@ -38,9 +38,11 @@ summary(traveldata)
 #summary(modelOfADDIM)
 #modelOfDOM<-lm(formula = Satisfaction~Day.of.Month,data = traveldatacleaned)
 #summary(modelOfDOM)
-modelOfQ<-lm(formula = Satisfaction~Shopping.Amount.at.Airport+Eating.and.Drinking.at.Airport,data = traveldatacleaned)
-summary(modelOfQ)
- 
+#modelOfQ<-lm(formula = Satisfaction~Shopping.Amount.at.Airport+Eating.and.Drinking.at.Airport,data = traveldatacleaned)
+#summary(modelOfQ)
+modelOfClass<-lm(formula = Satisfaction~Class,data = traveldatacleaned)
+summary(Class)
+  
 
 
 #index <- 1:nrow(traveldatacleaned)
