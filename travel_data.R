@@ -50,9 +50,10 @@ summary(traveldata)
 #summary(modelOfAge)
 #modelOfGender<-lm(formula = Satisfaction~Gender,data = traveldatacleaned)
 #summary(modelOfGender)
-modelOfAS<-lm(formula = Satisfaction~Airline.Status,data = traveldatacleaned)
-summary(modelOfAS)
-
+#modelOfAS<-lm(formula = Satisfaction~Airline.Status,data = traveldatacleaned)
+#summary(modelOfAS)
+modelOfFD<-lm(formula = Satisfaction~Flight.Distance,data = traveldatacleaned)
+summary(modelOfFlight.Distance)
 #                  Gender
 #index <- 1:nrow(traveldatacleaned)
 #testindex <- sample(index, trunc(length(index)/3))
