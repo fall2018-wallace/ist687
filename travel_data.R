@@ -42,10 +42,13 @@ summary(traveldata)
 #summary(modelOfQ)
 #modelOfClass<-lm(formula = Satisfaction~Class,data = traveldatacleaned)
 #summary(modelOfClass)
-modelOfNOF<-lm(formula = Satisfaction~No.of.Flights.p.a.,data = traveldatacleaned)
-summary(modelOfNOF)
-
-
+#modelOfNOF<-lm(formula = Satisfaction~No.of.Flights.p.a.,data = traveldatacleaned)
+#summary(modelOfNOF)
+#modelOfNOF<-lm(formula = Satisfaction~No.of.Flights.p.a.,data = traveldatacleaned)
+#summary(modelOfNOF)
+modelOfAge<-lm(formula = Satisfaction~Age.p.a.,data = traveldatacleaned)
+summary(modelOfAge)
+#Airline.Status          Age          Gender
 #index <- 1:nrow(traveldatacleaned)
 #testindex <- sample(index, trunc(length(index)/3))
 #testset <- traveldatacleaned[testindex,]
