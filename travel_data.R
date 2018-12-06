@@ -56,6 +56,7 @@ summary(traveldata)
 #summary(modelOfFD)
 #modelOfALL<-lm(formula = Satisfaction~.,data = traveldatacleaned)
 #summary(modelOfALL)
+
 #                  Gender
 #index <- 1:nrow(traveldatacleaned)
 #testindex <- sample(index, trunc(length(index)/3))
