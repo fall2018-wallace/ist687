@@ -7,9 +7,7 @@ traveldata$Flight.time.in.minutes <- ifelse(is.na(traveldata$Flight.time.in.minu
 traveldatacleaned<- traveldata[-(is.na(traveldata$Arrival.Delay.in.Minutes)),] 
 traveldatacleaned<- na.omit(traveldata) 
 traveldatacleaned$Satisfaction<-as.numeric(traveldatacleaned$Satisfaction)
-summary(traveldatacleaned) 
-datalow<-traveldatacleaned[traveldatacleaned$Satisfaction < 4,] 
-Airlinewithlowsat<- groupby (datalow,Airline.Name)
+
 
 modelofwhole<-lm(formula= Satisfaction~.,data = traveldatacleaned)
 #summary(modelofwhole)
