@@ -25,7 +25,9 @@ summary(modelOfAge)
 #summary(modelOfInfluencingFactors)
 
 
-lmCustomers <- lm(formula=Satisfaction~Age+Price.Sensitivity+Shopping.Amount.at.Airport+Eating.and.Drinking.at.Airport, data = traveldatacleaned)
-summary(lmCustomers)
+#lmCustomers <- lm(formula=Satisfaction~Age+Price.Sensitivity+Shopping.Amount.at.Airport+Eating.and.Drinking.at.Airport, data = traveldatacleaned)
+#summary(lmCustomers)
 
+lmCustomers <- lm(formula=Satisfaction~Price.Sensitivity, data = traveldatacleaned)
+summary(lmCustomers)
 
