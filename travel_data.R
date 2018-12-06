@@ -36,9 +36,10 @@ summary(traveldata)
 #summary(modelOfFTIM)
 #modelOfADDIM<-lm(formula = Satisfaction~Departure.Delay.in.Minutes+Arrival.Delay.in.Minutes,data = traveldatacleaned)
 #summary(modelOfADDIM)
-modelOfDOM<-lm(formula = Satisfaction~Day.of.Month,data = traveldatacleaned)
-summary(modelOfDOM)
-
+#modelOfDOM<-lm(formula = Satisfaction~Day.of.Month,data = traveldatacleaned)
+#summary(modelOfDOM)
+modelOfQ<-lm(formula = Satisfaction~Shopping.Amount.at.Airport+Eating.and.Drinking.at.Airport,data = traveldatacleaned)
+summary(modelOfQ)
  
 
 
