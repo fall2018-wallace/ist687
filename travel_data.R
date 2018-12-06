@@ -58,10 +58,11 @@ summary(traveldata)
 #summary(modelOfALL)
 #modelOfCancelled<-lm(formula = Satisfaction~Flight.cancelled,data = traveldatacleaned)
 #summary(modelOfCancelled)
-modelOfSDH<-lm(formula = Satisfaction~Scheduled.Departure.Hour,data = traveldatacleaned)
-summary(modelOfSDH)
-
-#                  Gender
+#modelOfSDH<-lm(formula = Satisfaction~Scheduled.Departure.Hour,data = traveldatacleaned)
+#summary(modelOfSDH)
+#modelOfOC<-lm(formula = Satisfaction~Orgin.City,data = traveldatacleaned)
+#summary(modelOfOC)
+#        Origin.State       Destination.City   Destination.State
 #index <- 1:nrow(traveldatacleaned)
 #testindex <- sample(index, trunc(length(index)/3))
 #testset <- traveldatacleaned[testindex,]
