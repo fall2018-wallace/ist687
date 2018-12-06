@@ -34,8 +34,8 @@ summary(traveldata)
 #summary(lmCustomers)
 #modelOfFTIM<-lm(formula = Satisfaction~Flight.time.in.minutes,data = traveldatacleaned)
 #summary(modelOfFTIM)
-modelOfADDIM<-lm(formula = Satisfaction~Departure.Delay.in.Minutes+Arrival.Delay.in.Minutes,data = traveldatacleaned)
-summary(modelOfADDIM)
+#modelOfADDIM<-lm(formula = Satisfaction~Departure.Delay.in.Minutes+Arrival.Delay.in.Minutes,data = traveldatacleaned)
+#summary(modelOfADDIM)
 
  
 
