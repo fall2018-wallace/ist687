@@ -9,7 +9,7 @@ traveldatacleaned<- na.omit(traveldata)
 traveldatacleaned$Satisfaction<-as.numeric(traveldatacleaned$Satisfaction)
 summary(traveldatacleaned) 
 datalow<-traveldatacleaned[traveldatacleaned$Satisfaction < 4,] 
-Airlinewithlowsat<-group_by(datalow,Airline.Name)
+Airlinewithlowsat<- groupby (datalow,Airline.Name)
 
 modelofwhole<-lm(formula= Satisfaction~.,data = traveldatacleaned)
 #summary(modelofwhole)
