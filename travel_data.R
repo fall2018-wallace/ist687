@@ -66,9 +66,11 @@ summary(traveldata)
 #summary(modelOfOS)
 #modelOfDC<-lm(formula = Satisfaction~Destination.City,data = traveldatacleaned)
 #summary(modelOfDC)
-modelOfDS<-lm(formula = Satisfaction~Destination.State,data = traveldatacleaned)
-summary(modelOfDS)
-#                  
+#modelOfDS<-lm(formula = Satisfaction~Destination.State,data = traveldatacleaned)
+#summary(modelOfDS)
+#modelOfDS<-lm(formula = Satisfaction~Destination.State,data = traveldatacleaned)
+#summary(modelOfDS)
+##########################################################################################                 
 #index <- 1:nrow(traveldatacleaned)
 #testindex <- sample(index, trunc(length(index)/3))
 #testset <- traveldatacleaned[testindex,]
