@@ -48,7 +48,7 @@ summary(traveldata)
 #summary(modelOfNOF)
 modelOfAge<-lm(formula = Satisfaction~Age,data = traveldatacleaned)
 summary(modelOfAge)
-#Airline.Status          Age          Gender
+#Airline.Status                  Gender
 #index <- 1:nrow(traveldatacleaned)
 #testindex <- sample(index, trunc(length(index)/3))
 #testset <- traveldatacleaned[testindex,]
