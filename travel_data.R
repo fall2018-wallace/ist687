@@ -70,6 +70,9 @@ summary(traveldata)
 #summary(modelOfDS)
 #modelOfFD<-lm(formula = Satisfaction~Flight.date,data = traveldatacleaned)
 #summary(modelOfFD)
+lmAll <- lm(formula=Satisfaction~Age+Gender+Price.Sensitivity+Shopping.Amount.at.Airport+Year.of.First.Flight+No.of.Flights.p.a.+No..of.other.Loyalty.Cards+Airline.Status+Type.of.Travel+Class+Scheduled.Departure.Hour+Arrival.Delay.greater.5.Mins, data = traveldatacleaned)
+summary(lmAll)
+
 ##########################################################################################                 
 #index <- 1:nrow(traveldatacleaned)
 #testindex <- sample(index, trunc(length(index)/3))
