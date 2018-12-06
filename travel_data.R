@@ -32,6 +32,11 @@ summary(traveldata)
 #summary(lmCustomers)
 #lmCustomers <- lm(formula=Satisfaction~Price.Sensitivity, data = traveldatacleaned)
 #summary(lmCustomers)
+modelOfFTIM<-lm(formula = Satisfaction~Flight.time.in.minutes,data = traveldatacleaned)
+summary(modelOfFTIM)
+
+  #Flight.Distance
+
 
 #index <- 1:nrow(traveldatacleaned)
 #testindex <- sample(index, trunc(length(index)/3))
