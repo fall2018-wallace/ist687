@@ -30,9 +30,8 @@ summary(traveldata)
 #summary(modelOfAirlineStatus)
 #lmCustomers <- lm(formula=Satisfaction~Age+Price.Sensitivity+Shopping.Amount.at.Airport+Eating.and.Drinking.at.Airport, data = traveldatacleaned)
 #summary(lmCustomers)
-
-lmCustomers <- lm(formula=Satisfaction~Price.Sensitivity, data = traveldatacleaned)
-summary(lmCustomers)
+#lmCustomers <- lm(formula=Satisfaction~Price.Sensitivity, data = traveldatacleaned)
+#summary(lmCustomers)
 
 #index <- 1:nrow(traveldatacleaned)
 #testindex <- sample(index, trunc(length(index)/3))
