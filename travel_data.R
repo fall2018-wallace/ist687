@@ -31,3 +31,9 @@ summary(modelOfAge)
 lmCustomers <- lm(formula=Satisfaction~Price.Sensitivity, data = traveldatacleaned)
 summary(lmCustomers)
 
+index <- 1:nrow(traveldatacleaned)
+testindex <- sample(index, trunc(length(index)/3))
+testset <- traveldatacleaned[testindex,]
+trainset <- traveldatacleaned[-testindex,]
+
+
