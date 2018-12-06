@@ -10,15 +10,15 @@ traveldatacleaned$Satisfaction<-as.numeric(traveldatacleaned$Satisfaction)
 
 
 modelofwhole<-lm(formula= Satisfaction~.,data = traveldatacleaned)
-summary(modelofwhole)
+#summary(modelofwhole)
 
 
 modelOfAirlineStatus<-lm(formula = Satisfaction~Airline.Status, data = traveldatacleaned)
 modelOfAirlineStatus
-summary(modelOfAirlineStatus)
+#summary(modelOfAirlineStatus)
 
 modelOfAge<-lm(formula = Satisfaction~Age, data = traveldatacleaned)
-summary(modelOfAge)
+#summary(modelOfAge)
 
 
 #modelOfInfluencingFactors<-lm(formula = Satisfaction ~ Flight_time_in_minutes+Flight_cancelled+Arrival_Delay_in_Minutes+Departure_Delay_in_Minutes+Scheduled_Departure_Hour+Destination_State+Destination_City+Origin_State+Orgin_City+Flight_date+Day_of_Month+Class+Eating_and_Drinking_at_Airport+Shopping_Amount_at_Airport+No__of_other_Loyalty_Cards+Type_of_Travel+X__of_Flight_with_other_Airlines+No_of_Flights_p_a_+Year_of_First_Flight+Price_Sensitivity+Gender+Age+Airline_Status,data= traveldatacleaned)
@@ -28,12 +28,14 @@ summary(modelOfAge)
 #lmCustomers <- lm(formula=Satisfaction~Age+Price.Sensitivity+Shopping.Amount.at.Airport+Eating.and.Drinking.at.Airport, data = traveldatacleaned)
 #summary(lmCustomers)
 
-lmCustomers <- lm(formula=Satisfaction~Price.Sensitivity, data = traveldatacleaned)
-summary(lmCustomers)
+#lmCustomers <- lm(formula=Satisfaction~Price.Sensitivity, data = traveldatacleaned)
+#summary(lmCustomers)
 
 index <- 1:nrow(traveldatacleaned)
 testindex <- sample(index, trunc(length(index)/3))
 testset <- traveldatacleaned[testindex,]
 trainset <- traveldatacleaned[-testindex,]
+svm.model <- svm(Satisfaction ~ ., data = trainset, cost = 100, gamma = 1)
+svm.pred <- predict(svm.model, testset[,-10])
 
 
