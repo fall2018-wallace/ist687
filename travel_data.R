@@ -62,7 +62,9 @@ summary(traveldata)
 #summary(modelOfSDH)
 #modelOfOC<-lm(formula = Satisfaction~Orgin.City,data = traveldatacleaned)
 #summary(modelOfOC)
-#        Origin.State       Destination.City   Destination.State
+#modelOfOS<-lm(formula = Satisfaction~Origin.State,data = traveldatacleaned)
+#summary(modelOfOS)
+#               Destination.City   Destination.State
 #index <- 1:nrow(traveldatacleaned)
 #testindex <- sample(index, trunc(length(index)/3))
 #testset <- traveldatacleaned[testindex,]
