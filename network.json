@@ -10,22 +10,155 @@
         {
             "ports": [
                 {
-                    "output": "clean_data",
-                    "type": "csv"
-                }
-            ],
-            "source": "clean.R",
-            "target": "data.csv"
-        },
-        {
-            "ports": [
-                {
                     "input": "raw_data",
                     "type": "csv"
                 }
             ],
             "source": "satisfactionSurvey.csv",
             "target": "clean.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data11",
+                    "output": "data0",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "clean.R",
+            "target": "data_on_customers.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data00",
+                    "output": "data0",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "clean.R",
+            "target": "travel_data.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "hist0",
+                    "type": "png"
+                }
+            ],
+            "source": "clean.R",
+            "target": "hist0.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "traveldata",
+                    "type": "csv"
+                }
+            ],
+            "source": "travel_data.R",
+            "target": "traveldata.csv"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data01",
+                    "output": "data0",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "clean.R",
+            "target": "data_on_flights.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "data_on_flights",
+                    "type": "csv"
+                }
+            ],
+            "source": "data_on_flights.R",
+            "target": "data01.csv"
+        },
+        {
+            "ports": [
+                {
+                    "output": "w1",
+                    "type": "png"
+                }
+            ],
+            "source": "data_on_flights.R",
+            "target": "w1.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "a10",
+                    "type": "png"
+                }
+            ],
+            "source": "data_on_flights.R",
+            "target": "a10.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "a12",
+                    "type": "png"
+                }
+            ],
+            "source": "data_on_flights.R",
+            "target": "a12.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "a16",
+                    "type": "png"
+                }
+            ],
+            "source": "data_on_flights.R",
+            "target": "a16.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "a61",
+                    "type": "png"
+                }
+            ],
+            "source": "data_on_flights.R",
+            "target": "a61.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "a6",
+                    "type": "png"
+                }
+            ],
+            "source": "data_on_flights.R",
+            "target": "a6.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "a2",
+                    "type": "png"
+                }
+            ],
+            "source": "data_on_flights.R",
+            "target": "a2.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "data0",
+                    "type": "csv"
+                }
+            ],
+            "source": "clean.R",
+            "target": "data.csv"
         }
     ],
     "nodes": [
@@ -42,24 +175,57 @@
             "task_status": "completed"
         },
         {
+            "assigned_to": "parshva11shah",
+            "desc": "Every column that has flight related data is handled\r\nexample: arrival time, departure times, delays, etc.",
+            "name": "data_on_flights.R",
+            "task_status": "completed"
+        },
+        {
+            "name": "hist0.png"
+        },
+        {
+            "name": "traveldata.csv"
+        },
+        {
+            "name": "traveldata111.png"
+        },
+        {
             "assigned_to": "arun468",
             "desc": "travel related data\r\nexample : city , state, origin , destination, etc",
             "name": "travel_data.R",
             "task_status": "completed"
         },
         {
-            "assigned_to": "parshva11shah",
-            "desc": "Every column that has flight related data is handled\r\nexample: arrival time, departure times, delays, etc.",
-            "name": "data_on_flights.R",
-            "task_status": "validating"
+            "name": "data01.csv"
         },
         {
             "assigned_to": "dasheth",
             "desc": "data related to customers.\r\nexample: age , gender, shopping, etc",
             "name": "data_on_customers.R",
-            "task_status": "completed"
+            "task_status": "in progress"
+        },
+        {
+            "name": "w1.png"
+        },
+        {
+            "name": "a10.png"
+        },
+        {
+            "name": "a12.png"
+        },
+        {
+            "name": "a16.png"
+        },
+        {
+            "name": "a61.png"
+        },
+        {
+            "name": "a6.png"
+        },
+        {
+            "name": "a2.png"
         }
     ],
-    "updated_at": "2018-11-29 18:01:22",
+    "updated_at": "2018-12-04 01:43:15",
     "url": "https://github.com/fall2018-wallace/ist687"
 }
