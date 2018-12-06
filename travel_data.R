@@ -75,7 +75,7 @@ summary(lmAll)
 lmDemoandCust <- lm(formula=Satisfaction~Age+Gender+Price.Sensitivity+Shopping.Amount.at.Airport+Eating.and.Drinking.at.Airport, data = traveldatacleaned)
 summary(lmDemoandCust )
 lmFlightexp <- lm(formula=Satisfaction~Year.of.First.Flight+No.of.Flights.p.a.+No..of.other.Loyalty.Cards+Airline.Status+Type.of.Travel+Class, data = traveldatacleaned)
-summary(Flmlightexp)
+summary(lmFlightexp)
 lmFlighttimedetails <- lm(formula=Satisfaction~Scheduled.Departure.Hour+Departure.Delay.in.Minutes+Arrival.Delay.in.Minutes+Flight.time.in.minutes+Arrival.Delay.greater.5.Mins+Flight.Distance, data = traveldatacleaned)
 summary(lmFlighttimedetails)
 
