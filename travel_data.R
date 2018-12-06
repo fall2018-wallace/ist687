@@ -41,7 +41,7 @@ summary(traveldata)
 #modelOfQ<-lm(formula = Satisfaction~Shopping.Amount.at.Airport+Eating.and.Drinking.at.Airport,data = traveldatacleaned)
 #summary(modelOfQ)
 modelOfClass<-lm(formula = Satisfaction~Class,data = traveldatacleaned)
-summary(Class)
+summary(modelOfClass)
   
 
 
