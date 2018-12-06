@@ -46,7 +46,7 @@ summary(traveldata)
 #summary(modelOfNOF)
 #modelOfNOF<-lm(formula = Satisfaction~No.of.Flights.p.a.,data = traveldatacleaned)
 #summary(modelOfNOF)
-modelOfAge<-lm(formula = Satisfaction~Age.p.a.,data = traveldatacleaned)
+modelOfAge<-lm(formula = Satisfaction~Age,data = traveldatacleaned)
 summary(modelOfAge)
 #Airline.Status          Age          Gender
 #index <- 1:nrow(traveldatacleaned)
