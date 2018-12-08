@@ -65,6 +65,7 @@ summary(lmFlighttimedetails)
 
 modelOfAS<-lm(formula = Satisfaction~Airline.Status,data = traveldatacleaned)
 summary(modelOfAS)
+library(ggplot2)
 ##########################################################################################                 
 #index <- 1:nrow(traveldatacleaned)
 #testindex <- sample(index, trunc(length(index)/3))
