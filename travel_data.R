@@ -80,7 +80,7 @@ lmFlighttimedetails <- lm(formula=Satisfaction~Scheduled.Departure.Hour+Departur
 summary(lmFlighttimedetails)
 
 
-
+ggplot()
 
 ##########################################################################################                 
 #index <- 1:nrow(traveldatacleaned)
