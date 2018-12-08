@@ -7,22 +7,7 @@ traveldata$Flight.time.in.minutes <- ifelse(is.na(traveldata$Flight.time.in.minu
 traveldatacleaned<- traveldata[-(is.na(traveldata$Arrival.Delay.in.Minutes)),] 
 traveldatacleaned<- na.omit(traveldata) 
 traveldatacleaned$Satisfaction<-as.numeric(traveldatacleaned$Satisfaction)
-
 summary(traveldata)
-#modelofwhole<-lm(formula= Satisfaction~.,data = traveldatacleaned)
-#summary(modelofwhole)
-
-
-#modelOfAirlineStatus<-lm(formula = Satisfaction~Airline.Status, data = traveldatacleaned)
-#modelOfAirlineStatus
-#summary(modelOfAirlineStatus)
-
-#modelOfAge<-lm(formula = Satisfaction~Age, data = traveldatacleaned)
-#summary(modelOfAge)
-#Flight.cancelled   #Flight.time.in.minutes #Flight.Distance
-#modelOfLoyalty<-lm(formula = Satisfaction~No..of.other.Loyalty.Cards,data = traveldatacleaned)
-#modelOfInfluencingFactors<-lm(formula = Satisfaction ~ Flight_time_in_minutes+Flight_cancelled+Arrival_Delay_in_Minutes+Departure_Delay_in_Minutes+Scheduled_Departure_Hour+Destination_State+Destination_City+Origin_State+Orgin_City+Flight_date+Day_of_Month+Class+Eating_and_Drinking_at_Airport+Shopping_Amount_at_Airport+No__of_other_Loyalty_Cards+Type_of_Travel+X__of_Flight_with_other_Airlines+No_of_Flights_p_a_+Year_of_First_Flight+Price_Sensitivity+Gender+Age+Airline_Status,data= traveldatacleaned)
-#summary(modelOfInfluencingFactors)
 ###############################################################################
 #modelOfLoyalty<-lm(formula = Satisfaction~No..of.other.Loyalty.Cards,data = traveldatacleaned)
 #summary(modelOfLoyalty)
@@ -50,8 +35,7 @@ summary(traveldata)
 #summary(modelOfAge)
 #modelOfGender<-lm(formula = Satisfaction~Gender,data = traveldatacleaned)
 #summary(modelOfGender)
-#modelOfAS<-lm(formula = Satisfaction~Airline.Status,data = traveldatacleaned)
-#summary(modelOfAS)
+
 #modelOfFD<-lm(formula = Satisfaction~Flight.Distance,data = traveldatacleaned)
 #summary(modelOfFD)
 #modelOfALL<-lm(formula = Satisfaction~.,data = traveldatacleaned)
@@ -79,9 +63,8 @@ summary(lmFlightexp)
 lmFlighttimedetails <- lm(formula=Satisfaction~Scheduled.Departure.Hour+Departure.Delay.in.Minutes+Arrival.Delay.in.Minutes+Flight.time.in.minutes+Arrival.Delay.greater.5.Mins+Flight.Distance, data = traveldatacleaned)
 summary(lmFlighttimedetails)
 
-
-ggplot()
-
+modelOfAS<-lm(formula = Satisfaction~Airline.Status,data = traveldatacleaned)
+summary(modelOfAS)
 ##########################################################################################                 
 #index <- 1:nrow(traveldatacleaned)
 #testindex <- sample(index, trunc(length(index)/3))
