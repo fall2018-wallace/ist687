@@ -63,7 +63,7 @@ modelOfSE<-lm(formula = Satisfaction~Shopping.Amount.at.Airport+Eating.and.Drink
 summary(modelOfSE)
 
 ##########################################################################
-ggplot(Satisfaction,aes(y=Satisfaction, x=Age))+
+d<-ggplot(Satisfaction,aes(y=Satisfaction, x=Age))+
   geom_point()+
   stat_smooth(method = "lm", col="red")
 ggplot(Satisfaction,aes(y=Satisfaction, x=Gender))+
