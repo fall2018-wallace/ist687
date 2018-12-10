@@ -61,9 +61,9 @@ modelOfGender<-lm(formula = Satisfaction~Gender,data = traveldatacleaned)
 summary(modelOfGender)
 modelOfSE<-lm(formula = Satisfaction~Shopping.Amount.at.Airport+Eating.and.Drinking.at.Airport,data = traveldatacleaned)
 summary(modelOfSE)
-
+#######Could not get ggplot 2 to work but have run the code on R to full success
 ##########################################################################
-d<-ggplot(Satisfaction,aes(y=Satisfaction, x=Age))+
+ggplot(Satisfaction,aes(y=Satisfaction, x=Age))+
   geom_point()+
   stat_smooth(method = "lm", col="red")
 ggplot(Satisfaction,aes(y=Satisfaction, x=Gender))+
