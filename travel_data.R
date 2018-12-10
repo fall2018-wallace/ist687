@@ -11,7 +11,6 @@ traveldatacleaned<- na.omit(traveldata)
 Satisfaction<-traveldatacleaned
 summary(traveldatacleaned)
 
-transform(Satisfaction, Satisfaction$Satisfaction = as.numeric(Satisfaction$Satisfaction))
 Satisfaction$Satisfaction <- as.numeric(as.character(Satisfaction$Satisfaction))
 Satisfaction$Price.Sensitivity <- as.numeric(as.character(Satisfaction$Price.Sensitivity))
 Satisfaction$Year.of.First.Flight <- as.numeric(as.character(Satisfaction$Year.of.First.Flight))
