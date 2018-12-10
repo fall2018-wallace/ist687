@@ -158,6 +158,16 @@
             ],
             "source": "satisfactionSurvey.csv",
             "target": "travel_data.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "ggplot1",
+                    "type": "png"
+                }
+            ],
+            "source": "travel_data.R",
+            "target": "ggplot1.png"
         }
     ],
     "nodes": [
@@ -228,6 +238,6 @@
             "name": "ggplot1.png"
         }
     ],
-    "updated_at": "2018-12-10 06:00:17",
+    "updated_at": "2018-12-10 06:00:32",
     "url": "https://github.com/fall2018-wallace/ist687"
 }
