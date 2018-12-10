@@ -1,6 +1,6 @@
 
 
-dataCleaned<-raw_data[(trimws(data$Airline.Name,which="right")=="Cheapseats Airlines Inc."),]
+dataCleaned<-raw_data#[(trimws(data$Airline.Name,which="right")=="Cheapseats Airlines Inc."),]
 traveldata<-dataCleaned
 
 traveldata$Flight.time.in.minutes <- ifelse(is.na(traveldata$Flight.time.in.minutes) & traveldata$Flight.cancelled == "Yes", 9999, traveldata$Flight.time.in.minutes)
