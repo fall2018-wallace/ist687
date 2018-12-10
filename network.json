@@ -41,16 +41,6 @@
         {
             "ports": [
                 {
-                    "output": "traveldata",
-                    "type": "csv"
-                }
-            ],
-            "source": "travel_data.R",
-            "target": "traveldata.csv"
-        },
-        {
-            "ports": [
-                {
                     "input": "data01",
                     "output": "data0",
                     "type": "r_obj"
@@ -193,9 +183,6 @@
             "name": "hist0.png"
         },
         {
-            "name": "traveldata.csv"
-        },
-        {
             "name": "traveldata111.png"
         },
         {
@@ -238,6 +225,6 @@
             "name": "ggplot1.png"
         }
     ],
-    "updated_at": "2018-12-10 06:00:32",
+    "updated_at": "2018-12-10 06:18:34",
     "url": "https://github.com/fall2018-wallace/ist687"
 }
