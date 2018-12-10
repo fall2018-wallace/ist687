@@ -158,6 +158,16 @@
             ],
             "source": "travel_data.R",
             "target": "ggplot1.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "traveldatacleaned",
+                    "type": "csv"
+                }
+            ],
+            "source": "travel_data.R",
+            "target": "traveldatacleaned.csv"
         }
     ],
     "nodes": [
@@ -228,6 +238,6 @@
             "name": "traveldatacleaned.csv"
         }
     ],
-    "updated_at": "2018-12-10 06:18:55",
+    "updated_at": "2018-12-10 06:19:16",
     "url": "https://github.com/fall2018-wallace/ist687"
 }
