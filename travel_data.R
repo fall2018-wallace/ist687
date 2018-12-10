@@ -27,7 +27,7 @@ Satisfaction$Arrival.Delay.in.Minutes <- as.numeric(as.character(Satisfaction$Ar
 Satisfaction$Flight.time.in.minutes <- as.numeric(as.character(Satisfaction$Flight.time.in.minutes))
 Satisfaction$Flight.Distance <- as.numeric(as.character(Satisfaction$Flight.Distance))
 Satisfaction <- Satisfaction[ ! Satisfaction$Satisfaction %in% c(1.5,2.5,3.5,4.5), ]
-View(Satisfaction)
+#View(Satisfaction)
 
 summary(Satisfaction)
 traveldatacleaned<-Satisfaction
