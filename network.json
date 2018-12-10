@@ -31,17 +31,6 @@
         {
             "ports": [
                 {
-                    "input": "data00",
-                    "output": "data0",
-                    "type": "r_obj"
-                }
-            ],
-            "source": "clean.R",
-            "target": "travel_data.R"
-        },
-        {
-            "ports": [
-                {
                     "output": "hist0",
                     "type": "png"
                 }
@@ -159,6 +148,26 @@
             ],
             "source": "clean.R",
             "target": "data.csv"
+        },
+        {
+            "ports": [
+                {
+                    "input": "raw_data",
+                    "type": "csv"
+                }
+            ],
+            "source": "satisfactionSurvey.csv",
+            "target": "travel_data.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "ggplot1",
+                    "type": "png"
+                }
+            ],
+            "source": "travel_data.R",
+            "target": "ggplot1.png"
         }
     ],
     "nodes": [
@@ -190,19 +199,7 @@
             "name": "traveldata111.png"
         },
         {
-            "assigned_to": "arun468",
-            "desc": "travel related data\r\nexample : city , state, origin , destination, etc",
-            "name": "travel_data.R",
-            "task_status": "completed"
-        },
-        {
             "name": "data01.csv"
-        },
-        {
-            "assigned_to": "dasheth",
-            "desc": "data related to customers.\r\nexample: age , gender, shopping, etc",
-            "name": "data_on_customers.R",
-            "task_status": "in progress"
         },
         {
             "name": "w1.png"
@@ -224,8 +221,23 @@
         },
         {
             "name": "a2.png"
+        },
+        {
+            "assigned_to": "dasheth",
+            "desc": "data related to customers.\r\nexample: age , gender, shopping, etc",
+            "name": "data_on_customers.R",
+            "task_status": "completed"
+        },
+        {
+            "assigned_to": "arun468",
+            "desc": "travel related data\r\nexample : city , state, origin , destination, etc",
+            "name": "travel_data.R",
+            "task_status": "completed"
+        },
+        {
+            "name": "ggplot1.png"
         }
     ],
-    "updated_at": "2018-12-04 01:43:15",
+    "updated_at": "2018-12-10 06:00:32",
     "url": "https://github.com/fall2018-wallace/ist687"
 }
