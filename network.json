@@ -223,8 +223,11 @@
             "desc": "travel related data\r\nexample : city , state, origin , destination, etc",
             "name": "travel_data.R",
             "task_status": "completed"
+        },
+        {
+            "name": "ggplot1.png"
         }
     ],
-    "updated_at": "2018-12-10 05:59:53",
+    "updated_at": "2018-12-10 06:00:17",
     "url": "https://github.com/fall2018-wallace/ist687"
 }
